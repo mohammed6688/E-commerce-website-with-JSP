@@ -3,11 +3,15 @@ package com.example.final_project;
 import java.io.*;
 
 import com.twilio.Twilio;
+import com.twilio.rest.api.v2010.account.Call;
+import com.twilio.twiml.VoiceResponse;
+import com.twilio.twiml.voice.Say;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
+import java.net.URI;
 
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
@@ -22,12 +26,15 @@ public class HelloServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
-
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 
-        Message message = Message.creator(new PhoneNumber("+201126498473"),
+//        Message message = Message.creator(new PhoneNumber("+201126498473"),
+//                new PhoneNumber("+14433314574"),
+//                "This is the ship that made the Kessel Run in fourteen parsecs?").create();
+
+        Call message = Call.creator(new PhoneNumber("+201020516469"),
                 new PhoneNumber("+14433314574"),
-                "This is the ship that made the Kessel Run in fourteen parsecs?").create();
+                new com.twilio.type.Twiml("<Response><Say loop=\"3\">your code is 5 4 3 2</Say></Response>")).create();
 
         System.out.println(message.getSid());
 

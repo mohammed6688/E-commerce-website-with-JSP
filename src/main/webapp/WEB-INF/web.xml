@@ -12,15 +12,23 @@
     </error-page>
     <context-param>
         <param-name>DB_NAME</param-name>
-        <param-value></param-value>
+        <param-value>trialJsp</param-value>
     </context-param>
     <context-param>
         <param-name>USER_NAME</param-name>
-        <param-value></param-value>
+        <param-value>postgres</param-value>
     </context-param>
     <context-param>
         <param-name>USER_PASSWORD</param-name>
-        <param-value></param-value>
+        <param-value>1502654</param-value>
     </context-param>
 
+    <servlet>
+        <servlet-name>addproduct</servlet-name>
+        <servlet-class>com.example.final_project.servlet.AddProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addproduct</servlet-name>
+        <url-pattern>/addproduct</url-pattern>
+    </servlet-mapping>
 </web-app>

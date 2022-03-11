@@ -12,8 +12,9 @@ public class User {
     int creditLimit;
     String address;
     String interests;
+    boolean status;
 
-    public User(int id, boolean admin, String name, String birthDate, String password, int phoneNumber, String jop, String email, int creditLimit, String address, String interests) {
+    public User(int id, boolean admin, String name, String birthDate, String password, int phoneNumber, String jop, String email, int creditLimit, String address, String interests, boolean status) {
         this.id = id;
         this.admin = admin;
         this.name = name;
@@ -25,6 +26,15 @@ public class User {
         this.creditLimit = creditLimit;
         this.address = address;
         this.interests = interests;
+        this.status = status;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     public int getId() {

@@ -1,9 +1,7 @@
 package com.example.final_project.modules;
 
-import java.io.PrintWriter;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class SiteDAO {
@@ -55,6 +53,23 @@ public class SiteDAO {
                     rs.getString("details"),
                     rs.getString("category")));
         }
+
+        System.out.println("in get product");
+        return products;
+    }
+
+    public List<Cart> getCart() throws SQLException {
+        stmt = this.con.prepareStatement("select * from cart");
+        ResultSet rs =stmt.executeQuery();
+        List<Cart> products = new ArrayList<>();
+
+        while (rs.next()) {
+            products.add(new Cart(
+                    rs.getInt("productid"),
+                    rs.getInt("userid"),
+                    rs.getInt("quantity")));
+        }
+        System.out.println("in get cart");
 
         return products;
     }
@@ -120,7 +135,69 @@ public class SiteDAO {
         }
     }
 
-    public void checkout(int userId){
+    public String checkout(User user,List<Product> userProducts, List<Cart> userCart) throws SQLException {
+        int totalPrice=0;
 
+        List <UserProduct> userProduct=new ArrayList<>();
+        for (Cart cart:userCart){
+            for (Product product:userProducts){
+                if (user.getId()==cart.getUserId() && cart.productId==product.getId()){ //check for the ownership of the cat for that user
+                    if (cart.quantity>product.quantity){
+                        return "ordered product is out of stock";
+                    }
+                    userProduct.add(
+                            new UserProduct(product.getId()
+                            ,product.getTitle(),product.getPrice()
+                            ,product.getQuantity(),product.getPhotoUrl()
+                            ,product.getDetails(),product.getCategory()
+                            ,cart.getQuantity()));
+                }
+                totalPrice+=product.getPrice();
+            }
+        }
+
+        if (totalPrice>user.getCreditLimit()){
+            return "you dont have enough credit";
+        }
+
+        int value= master(user,totalPrice,userProducts,userProduct);
+        if (value!=1){
+            return "error while charging user";
+        }
+        return "success";
+        //check for quantity > ordered quantity or not
+        //check for total price if smaller than user credit
     }
+
+    private int master(User user,int totalPrice,List<Product> products,List<UserProduct> userProducts) throws SQLException {
+        StringBuilder query= new StringBuilder("BEGIN;" +
+                "update users set creditlimit= ? where id= ?;");
+        for (Product product:products){
+            query.append("delete from cart where productid =")
+                    .append(product.getId())
+                    .append(";");
+        }
+
+        for (UserProduct product:userProducts){
+            query.append("update product set quantity = ")
+                    .append(product.getQuantity() - product.getOrderedQuantity())
+                    .append(" where id =")
+                    .append(product.getId())
+                    .append(";");
+        }
+        query.append("COMMIT;");
+
+        System.out.println(query.toString());
+        PreparedStatement statement = con.prepareStatement(query.toString());
+        statement.setInt(1,user.getCreditLimit()-totalPrice);
+        statement.setInt(2,user.getId());
+        statement.executeUpdate();
+
+        //decrease credit from user
+        //remove products from user cart
+        //decease product quantity
+
+        return 1;
+    }
+
 }

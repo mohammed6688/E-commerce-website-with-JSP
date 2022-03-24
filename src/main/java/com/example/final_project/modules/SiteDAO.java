@@ -96,7 +96,7 @@ public class SiteDAO {
         }
     }
 
-    public String checkSignIn(String email, String password,User userObj) {
+    public User checkSignIn(String email, String password) {
         try {
             PreparedStatement stmt = con.prepareStatement("select * from users where email = ?");
             stmt.setString(1, email);
@@ -114,24 +114,26 @@ public class SiteDAO {
                         rs.getString("email"),
                         rs.getInt("creditlimit"),
                         rs.getString("address"),
-                        rs.getString("interests"),
-                        rs.getBoolean("status"));
+                        rs.getString("interests"));
 
                 System.out.println(email + " " + user.password);
-                userObj=user;
+                //return user;
             }
 
 
-            if (user != null && password.equals(user.password) && user.status != true) {
-                return "Logged in successfully";
-            } else if (user.status == true && password.equals(user.password)) {
-                return "you have already signed in from another device";
+            if (user != null && password.equals(user.password) && !user.status) {
+                return user;
+                //return "Logged in successfully";
+            } else if (user.status && password.equals(user.password)) {
+                return null;
+//                return "you have already signed in from another device";
             } else {
-                return "Email or Password is not correct";
+                return null;
+//                return "Email or Password is not correct";
             }
         } catch (SQLException ex) {
-            return "Email or Password is not correct";
-
+//            return "Email or Password is not correct";
+            return null;
         }
     }
 

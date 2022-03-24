@@ -202,4 +202,15 @@ public class SiteDAO {
         return 1;
     }
 
+    public List<Product> getCategory(String category){
+        //implement function here
+
+        return null;
+    }
+
+    public List<Product> getLatest(){
+        //implement function here
+
+        return null;
+    }
 }

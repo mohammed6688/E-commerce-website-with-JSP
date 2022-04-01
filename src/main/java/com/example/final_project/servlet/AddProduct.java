@@ -11,25 +11,30 @@ import java.sql.*;
 
 //@WebServlet(name = "AddProduct", value = "/AddProduct")
 public class AddProduct extends HttpServlet {
-    Connection con;
-    @Override
-    public void init() throws ServletException {
-        String DB_NAME = (String) getServletContext().getInitParameter("DB_NAME");
-        String USER = (String) getServletContext().getInitParameter("USER_NAME");
-        String PASS = (String) getServletContext().getInitParameter("USER_PASSWORD");
-        try {
-            con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" + DB_NAME, USER, PASS);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("header.html").include(request,response);
-        request.getRequestDispatcher("addProduct.html").include(request,response);
+        request.getRequestDispatcher("addProduct.jsp").include(request,response);
         request.getRequestDispatcher("footer.html").include(request,response);
 
+        String mode = request.getParameter("mode");
+        if (mode!=null){
+            int Price= Integer.parseInt(request.getParameter("Price"));
+            int Quantity= Integer.parseInt(request.getParameter("Quantity"));
+            int id=Integer.parseInt(request.getParameter("id"));
+
+            try {
+                int value =SiteDAO.instanceData.editProduct(Price,Quantity,id);
+                if (value==1){
+                    System.out.println("success edited");
+                }else {
+                    System.out.println("failed edited");
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 
     @Override

@@ -1,6 +1,6 @@
 package com.example.final_project.modules;
 
-public class Cart {
+public class Cart{
     int productId;
     int userId;
     int quantity;

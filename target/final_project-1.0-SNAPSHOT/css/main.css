@@ -1644,6 +1644,23 @@ h2.title {
     background: #FE980F
 }
 
+.cart_edit {
+    display: block;
+    margin-right: -12px;
+    overflow: hidden;
+}
+
+.cart_edit a {
+    background: #F0F0E9;
+    color: #FFFFFF;
+    padding: 5px 7px;
+    font-size: 16px
+}
+
+.cart_edit a:hover {
+    background: #FE980F
+}
+
 .bg h2.title {
     margin-right: 0;
     margin-left: 0;

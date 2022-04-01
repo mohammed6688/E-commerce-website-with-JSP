@@ -16,14 +16,19 @@
 <body>
 <%@include file="/adminheader.html" %>
 
-<%--<%--%>
-<%--    String mode = request.getParameter("mode");--%>
-<%--    if (mode != null) {--%>
-<%--        String id = request.getParameter("id");--%>
-<%--        SiteDAO.instanceData.delete(Integer.parseInt(id));--%>
-
-<%--    }--%>
-<%--%>--%>
+<%!
+    public static boolean isNumeric(String strNum) {
+        if (strNum == null) {
+            return false;
+        }
+        try {
+            int d = Integer.parseInt(strNum);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
+    }
+%>
 <div class="container">
     <div class="breadcrumbs">
         <ol class="breadcrumb">
@@ -50,7 +55,11 @@
                     List<Product> product;
                     if (request.getParameter("mode")!=null && request.getParameter("mode").equals("search")){
                         String keyword = request.getParameter("search");
-                        product = SiteDAO.instanceData.getProduct(Integer.parseInt(keyword));
+                        if (isNumeric(keyword)){
+                            product = SiteDAO.instanceData.getProduct(Integer.parseInt(keyword));
+                        }else {
+                            product = SiteDAO.instanceData.getProduct(keyword);
+                        }
                     }else {
                         product = SiteDAO.instanceData.getProducts();
                     }

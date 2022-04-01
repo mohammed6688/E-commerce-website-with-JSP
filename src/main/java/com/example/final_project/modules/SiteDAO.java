@@ -254,6 +254,30 @@ public class SiteDAO {
         return product;
     }
 
+    public List<Product> getProduct(String id) throws SQLException {
+        stmt = this.con.prepareStatement("select * from product where title like ?");
+        stmt.setString(1,"%" + id + "%");
+        ResultSet rs = stmt.executeQuery();
+        List<Product> product = new ArrayList<>();
+
+
+        while (rs.next()) {
+            product.add(new Product(
+                    rs.getInt("id"),
+                    rs.getString("title"),
+                    rs.getInt("price"),
+                    rs.getInt("quantity"),
+                    rs.getString("photo"),
+                    rs.getString("details"),
+                    rs.getString("category")));
+        }
+
+        System.out.println(product.size());
+
+        System.out.println("in get product");
+        return product;
+    }
+
     public int editProduct(int price, int quantity, int id) throws SQLException {
         stmt = this.con.prepareStatement("update product set price = ?,quantity=? where id = ?;");
         stmt.setInt(1, price);

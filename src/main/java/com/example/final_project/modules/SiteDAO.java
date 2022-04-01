@@ -10,37 +10,51 @@ public class SiteDAO {
     public static SiteDAO instanceData;
     PreparedStatement stmt;
 
-    public SiteDAO(String dbname,String user,String pass) throws SQLException {
-        this.connect(dbname,user,pass);
+    public SiteDAO(String dbname, String user, String pass) throws SQLException {
+        this.connect(dbname, user, pass);
     }
 
-    private void connect(String dbname,String user,String pass) throws SQLException {
+    private void connect(String dbname, String user, String pass) throws SQLException {
         this.con = DriverManager.getConnection(DB_URL + dbname, user, pass);
-        instanceData=this;
+        instanceData = this;
     }
 
-    public int AddProduct(String title,int Price,int Quantity,String photoUrl,String details,String category) throws SQLException {
-            stmt = this.con.prepareStatement("insert into product(title,price,quantity,photo,details,category) values(?,?,?,?,?,?)");
-            stmt.setString(1, title);
-            stmt.setInt(2, Price);
-            stmt.setInt(3, Quantity);
-            stmt.setString(4, photoUrl);
-            stmt.setString(5, details);
-            stmt.setString(6, category);
+    public int delete(int id) throws SQLException {
+        System.out.print(id);
+        stmt = this.con.prepareStatement("delete from product where id = ?" );
+        stmt.setInt(1,id);
+        stmt.executeUpdate();
+        ResultSet rs = stmt.getGeneratedKeys();
 
-            stmt.executeUpdate();
-            ResultSet rs = stmt.getGeneratedKeys();
+        if (rs.next()) {
+            return 1;
+        }else{
+            return 0;
+        }
+    }
 
-            if (rs != null) {
-                return 1;
-            }else {
-              return -1;
-            }
+    public int AddProduct(String title, int Price, int Quantity, String photoUrl, String details, String category) throws SQLException {
+        stmt = this.con.prepareStatement("insert into product(title,price,quantity,photo,details,category) values(?,?,?,?,?,?)");
+        stmt.setString(1, title);
+        stmt.setInt(2, Price);
+        stmt.setInt(3, Quantity);
+        stmt.setString(4, photoUrl);
+        stmt.setString(5, details);
+        stmt.setString(6, category);
+
+        stmt.executeUpdate();
+        ResultSet rs = stmt.getGeneratedKeys();
+
+        if (rs != null) {
+            return 1;
+        } else {
+            return -1;
+        }
     }
 
     public List<Product> getProducts() throws SQLException {
         stmt = this.con.prepareStatement("select * from product");
-        ResultSet rs =stmt.executeQuery();
+        ResultSet rs = stmt.executeQuery();
         List<Product> products = new ArrayList<>();
 
         while (rs.next()) {
@@ -60,7 +74,7 @@ public class SiteDAO {
 
     public List<Cart> getCart() throws SQLException {
         stmt = this.con.prepareStatement("select * from cart");
-        ResultSet rs =stmt.executeQuery();
+        ResultSet rs = stmt.executeQuery();
         List<Cart> products = new ArrayList<>();
 
         while (rs.next()) {
@@ -74,7 +88,7 @@ public class SiteDAO {
         return products;
     }
 
-    public String checkSignUp(boolean admin,String name,Date birthday,String password,int phonenumber,String job,String email,int creditlimit,String address,String interests){
+    public String checkSignUp(boolean admin, String name, Date birthday, String password, int phonenumber, String job, String email, int creditlimit, String address, String interests) {
         try {
 //            java.sql.Date currDate = new java.sql.Date(Calendar.getInstance().getTime().getTime());
             stmt = this.con.prepareStatement("insert into users (admin,name,birthday,password,phonenumber,job,email,creditlimit,address,interests) values(?,?,?,?,?,?,?,?,?,?)");
@@ -137,33 +151,33 @@ public class SiteDAO {
         }
     }
 
-    public String checkout(User user,List<Product> userProducts, List<Cart> userCart) throws SQLException {
-        int totalPrice=0;
+    public String checkout(User user, List<Product> userProducts, List<Cart> userCart) throws SQLException {
+        int totalPrice = 0;
 
-        List <UserProduct> userProduct=new ArrayList<>();
-        for (Cart cart:userCart){
-            for (Product product:userProducts){
-                if (user.getId()==cart.getUserId() && cart.productId==product.getId()){ //check for the ownership of the cat for that user
-                    if (cart.quantity>product.quantity){
+        List<UserProduct> userProduct = new ArrayList<>();
+        for (Cart cart : userCart) {
+            for (Product product : userProducts) {
+                if (user.getId() == cart.getUserId() && cart.productId == product.getId()) { //check for the ownership of the cat for that user
+                    if (cart.quantity > product.quantity) {
                         return "ordered product is out of stock";
                     }
                     userProduct.add(
                             new UserProduct(product.getId()
-                            ,product.getTitle(),product.getPrice()
-                            ,product.getQuantity(),product.getPhotoUrl()
-                            ,product.getDetails(),product.getCategory()
-                            ,cart.getQuantity()));
+                                    , product.getTitle(), product.getPrice()
+                                    , product.getQuantity(), product.getPhotoUrl()
+                                    , product.getDetails(), product.getCategory()
+                                    , cart.getQuantity()));
                 }
-                totalPrice+=product.getPrice();
+                totalPrice += product.getPrice();
             }
         }
 
-        if (totalPrice>user.getCreditLimit()){
+        if (totalPrice > user.getCreditLimit()) {
             return "you dont have enough credit";
         }
 
-        int value= master(user,totalPrice,userProducts,userProduct);
-        if (value!=1){
+        int value = master(user, totalPrice, userProducts, userProduct);
+        if (value != 1) {
             return "error while charging user";
         }
         return "success";
@@ -171,16 +185,16 @@ public class SiteDAO {
         //check for total price if smaller than user credit
     }
 
-    private int master(User user,int totalPrice,List<Product> products,List<UserProduct> userProducts) throws SQLException {
-        StringBuilder query= new StringBuilder("BEGIN;" +
+    private int master(User user, int totalPrice, List<Product> products, List<UserProduct> userProducts) throws SQLException {
+        StringBuilder query = new StringBuilder("BEGIN;" +
                 "update users set creditlimit= ? where id= ?;");
-        for (Product product:products){
+        for (Product product : products) {
             query.append("delete from cart where productid =")
                     .append(product.getId())
                     .append(";");
         }
 
-        for (UserProduct product:userProducts){
+        for (UserProduct product : userProducts) {
             query.append("update product set quantity = ")
                     .append(product.getQuantity() - product.getOrderedQuantity())
                     .append(" where id =")
@@ -191,8 +205,8 @@ public class SiteDAO {
 
         System.out.println(query.toString());
         PreparedStatement statement = con.prepareStatement(query.toString());
-        statement.setInt(1,user.getCreditLimit()-totalPrice);
-        statement.setInt(2,user.getId());
+        statement.setInt(1, user.getCreditLimit() - totalPrice);
+        statement.setInt(2, user.getId());
         statement.executeUpdate();
 
         //decrease credit from user
@@ -202,15 +216,55 @@ public class SiteDAO {
         return 1;
     }
 
-    public List<Product> getCategory(String category){
+    public List<Product> getCategory(String category) {
+        //this function get a list of products according to specific category
         //implement function here
 
         return null;
     }
 
-    public List<Product> getLatest(){
+    public List<Product> getLatest() {
+        //this function gets the latest 3 products
         //implement function here
 
         return null;
+    }
+
+    public Product getProduct(int id) throws SQLException {
+        stmt = this.con.prepareStatement("select * from product where id = ?");
+        stmt.setInt(1,id );
+        ResultSet rs = stmt.executeQuery();
+        Product product = null;
+
+
+        while (rs.next()) {
+            product=new Product(
+                    rs.getInt("id"),
+                    rs.getString("title"),
+                    rs.getInt("price"),
+                    rs.getInt("quantity"),
+                    rs.getString("photo"),
+                    rs.getString("details"),
+                    rs.getString("category"));
+        }
+
+        System.out.println("in get product");
+        return product;
+    }
+
+    public int editProduct(int price, int quantity, int id) throws SQLException {
+        stmt = this.con.prepareStatement("update product set price = ?,quantity=? where id = ?;");
+        stmt.setInt(1, price);
+        stmt.setInt(2, quantity);
+        stmt.setInt(3, id);
+
+        stmt.executeUpdate();
+        ResultSet rs = stmt.getGeneratedKeys();
+
+        if (rs != null) {
+            return 1;
+        } else {
+            return -1;
+        }
     }
 }

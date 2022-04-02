@@ -19,6 +19,34 @@ public class SiteDAO {
         instanceData = this;
     }
 
+    public void addToCart(Cart cart) throws SQLException {
+        stmt = this.con.prepareStatement("insert into cart(productid,userid,quantity) values(?,?,?)");
+        stmt.setInt(1, cart.getProductId());
+        stmt.setInt(2, cart.getUserId());
+        stmt.setInt(3, cart.getQuantity());
+
+        stmt.executeUpdate();
+        ResultSet rs = stmt.getGeneratedKeys();
+
+//        if (rs != null) {
+//            return 1;
+//        } else {
+//            return -1;
+//        }
+    }
+
+    public void deleteFromCart(int productid, int userid) throws SQLException {
+        System.out.println("prod id "+productid);
+        System.out.println("user id "+userid);
+        stmt = this.con.prepareStatement("delete from cart where productid = ? and userid = ?" );
+        stmt.setInt(1,productid);
+        stmt.setInt(2,userid);
+
+        stmt.executeUpdate();
+        ResultSet rs = stmt.getGeneratedKeys();
+
+    }
+
     public int delete(int id) throws SQLException {
         System.out.print(id);
         stmt = this.con.prepareStatement("delete from product where id = ?" );
@@ -157,7 +185,7 @@ public class SiteDAO {
         List<UserProduct> userProduct = new ArrayList<>();
         for (Cart cart : userCart) {
             for (Product product : userProducts) {
-                if (user.getId() == cart.getUserId() && cart.productId == product.getId()) { //check for the ownership of the cat for that user
+                if (user.getId() == cart.getUserId() && cart.getProductId() == product.getId()) { //check for the ownership of the cat for that user
                     if (cart.quantity > product.quantity) {
                         return "ordered product is out of stock";
                     }
@@ -167,8 +195,9 @@ public class SiteDAO {
                                     , product.getQuantity(), product.getPhotoUrl()
                                     , product.getDetails(), product.getCategory()
                                     , cart.getQuantity()));
+
+                    totalPrice += product.getPrice()*cart.getQuantity();
                 }
-                totalPrice += product.getPrice();
             }
         }
 
@@ -254,9 +283,9 @@ public class SiteDAO {
         return product;
     }
 
-    public List<Product> getProduct(String id) throws SQLException {
+    public List<Product> getProduct(String title) throws SQLException {
         stmt = this.con.prepareStatement("select * from product where title like ?");
-        stmt.setString(1,"%" + id + "%");
+        stmt.setString(1,"%" + title + "%");
         ResultSet rs = stmt.executeQuery();
         List<Product> product = new ArrayList<>();
 

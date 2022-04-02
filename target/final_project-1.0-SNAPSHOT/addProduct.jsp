@@ -1,7 +1,7 @@
 <%@ page import="com.example.final_project.modules.SiteDAO" %>
 <%@ page import="java.sql.SQLException" %>
 <%@ page import="com.example.final_project.modules.Product" %>
-<%@include  file="/header.html" %>
+<%@include  file="/loginheader.html" %>
 
 
 <%

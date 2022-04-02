@@ -162,11 +162,14 @@ public class SiteDAO {
                 //return user;
             }
 
+            System.out.println("entered pass "+password);
+            System.out.println("user id "+user.getId());
 
-            if (user != null && password.equals(user.password) && !user.status) {
+            if (user != null && password.equals(user.password)) {
+                System.out.println("yes ");
                 return user;
                 //return "Logged in successfully";
-            } else if (user.status && password.equals(user.password)) {
+            } else if (user==null ||!password.equals(user.password)) {
                 return null;
 //                return "you have already signed in from another device";
             } else {

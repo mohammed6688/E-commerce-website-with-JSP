@@ -75,6 +75,8 @@
 
             if (user!=null) {
                 HttpSession httpSession = request.getSession(true);
+                System.out.println("in validation "+user.getId());
+                httpSession.setAttribute("userid", user.getId());
                 httpSession.setAttribute("name", user.getName());
                 httpSession.setAttribute("mail", user.getEmail());
                 httpSession.setAttribute("phone", user.getPhoneNumber());

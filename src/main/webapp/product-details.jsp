@@ -15,11 +15,11 @@
         }
     }
 
-    String id =request.getParameter("id");
+    String id = request.getParameter("id");
     try {
-        List<Product> products =SiteDAO.instanceData.getProducts();
-        for (Product prod:products){
-            if (prod.getId()==Integer.parseInt(id)){
+        List<Product> products = SiteDAO.instanceData.getProducts();
+        for (Product prod : products) {
+            if (prod.getId() == Integer.parseInt(id)) {
 
 %>
 <section>
@@ -36,26 +36,30 @@
                     </div>
                     <div class="col-sm-7">
                         <form action="cart.jsp">
-                        <div class="product-information"><!--/product-information-->
-                            <img src="../images/product-details/new.jpg" class="newarrival" alt=""/>
-                            <h2><%=prod.getTitle()%></h2>
-                            <p>Web ID: <%=prod.getId()%></p>
-                            <img src="../images/product-details/rating.png" alt=""/>
-                            <span>
+                            <div class="product-information"><!--/product-information-->
+                                <img src="../images/product-details/new.jpg" class="newarrival" alt=""/>
+                                <h2><%=prod.getTitle()%>
+                                </h2>
+                                <p>Web ID: <%=prod.getId()%>
+                                </p>
+                                <img src="../images/product-details/rating.png" alt=""/>
+                                <span>
 									<span>US $<%=prod.getPrice()%></span>
 									<label>Quantity:</label>
+                                    <input type="hidden" value="<%=prod.getId()%>" name="id"/>
 									<input type="text" value="1" name="quantity"/>
 									<button type="submit" class="btn btn-fefault cart">
 										<i class="fa fa-shopping-cart"></i>
 										Add to cart
 									</button>
 								</span>
-                            <%if (prod.getQuantity()>0){%>
-                            <p><b>Availability:</b> In Stock</p>
-                            <%}%>
-                            <p><b>Condition:</b> New</p>
-                            <p><b>Category:</b> <%=prod.getCategory()%></p>
-                        </div><!--/product-information-->
+                                <%if (prod.getQuantity() > 0) {%>
+                                <p><b>Availability:</b> In Stock</p>
+                                <%}%>
+                                <p><b>Condition:</b> New</p>
+                                <p><b>Category:</b> <%=prod.getCategory()%>
+                                </p>
+                            </div><!--/product-information-->
                         </form>
                     </div>
                 </div><!--/product-details-->
@@ -69,7 +73,8 @@
                     <div class="tab-content">
                         <div class="tab-pane fade active in" id="reviews">
                             <div class="col-sm-12">
-                                <p><%=prod.getDetails()%></p>
+                                <p><%=prod.getDetails()%>
+                                </p>
                                 <p><b>Write Your Review</b></p>
                                 <form action="#">
 										<span>

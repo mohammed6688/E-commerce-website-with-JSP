@@ -63,8 +63,9 @@
                 </thead>
                 <tbody>
                 <%
+                    int totalPrice = 0;
+
                     try {
-                        //String userid = (String) httpSession.getAttribute("userid");
                         List<Cart> cartList = SiteDAO.instanceData.getCart();
                         List<Product> productList = SiteDAO.instanceData.getProducts();
                         for (Cart cart : cartList) {
@@ -84,10 +85,10 @@
                     </td>
                     <td class="cart_quantity">
                         <div class="cart_quantity_button">
-                            <a class="cart_quantity_up" href=""> + </a>
+                            <a class="cart_quantity_up" href="#"> + </a>
                             <input class="cart_quantity_input" type="text" name="quantity" value="<%=cart.getQuantity()%>" autocomplete="off"
                                    size="2">
-                            <a class="cart_quantity_down" href=""> - </a>
+                            <a class="cart_quantity_down" href="#"> - </a>
                         </div>
                     </td>
                     <td class="cart_total">
@@ -98,6 +99,8 @@
                     </td>
                 </tr>
                 <%
+                                    totalPrice += product.getPrice()*cart.getQuantity();
+
                                 }
                             }
                         }
@@ -111,5 +114,23 @@
     </div>
 </section>
 <!--/#cart_items-->
+
+<section id="do_action">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="total_area">
+                    <ul>
+                        <li>Cart Sub Total <span>$<%=totalPrice%></span></li>
+                        <li>Shipping Cost <span>Free</span></li>
+                        <li>Total <span>$<%=totalPrice%></span></li>
+                    </ul>
+                    <a class="btn btn-default check_out" href="checkout.jsp">Check Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/#do_action-->
+
 
 <%@include file="/footer.html" %>

@@ -195,8 +195,9 @@ public class SiteDAO {
                                     , product.getQuantity(), product.getPhotoUrl()
                                     , product.getDetails(), product.getCategory()
                                     , cart.getQuantity()));
+
+                    totalPrice += product.getPrice()*cart.getQuantity();
                 }
-                totalPrice += product.getPrice();
             }
         }
 

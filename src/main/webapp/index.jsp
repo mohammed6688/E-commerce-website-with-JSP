@@ -35,6 +35,7 @@
                         <%
                             try {
                                 List<Product> product = SiteDAO.instanceData.getProducts();
+                                product.subList(3,product.size()).clear();
                                 int num = 0;
                                 for (Product i : product) {
                                     num++;
@@ -138,6 +139,7 @@
                     <%
                         try {
                             List<Product> product = SiteDAO.instanceData.getProducts();
+                            product.subList(9,product.size()).clear();
                             for (Product i : product) {
                     %>
                     <div class="col-sm-4">

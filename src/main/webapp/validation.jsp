@@ -153,8 +153,8 @@
                     new PhoneNumber("+14433314574"),
                     "your code is: "+code).create();
             System.out.println(message.getSid());
-
-
+            response.sendRedirect("phoneValidate.jsp");
+            /*
             HttpSession httpSession =request.getSession(true);
             httpSession.setAttribute("sms_code",code);
             httpSession.setAttribute("name",userName);
@@ -176,8 +176,7 @@
                 System.out.println(res);
                 error = "register_error";
                 response.sendRedirect("login.jsp?" + error);
-            }
-//            response.sendRedirect("phoneValidate.jsp");
+            }*/
         } else {
             System.out.println("error: "+error);
             response.sendRedirect("login.jsp?"+error);

@@ -1,8 +1,9 @@
 <%@ page import="com.example.final_project.modules.SiteDAO" %>
 <%@ page import="java.sql.SQLException" %>
 <%@ page import="com.example.final_project.modules.Product" %>
-<%@include  file="/loginheader.html" %>
+<%@ page import="java.util.List" %>
 
+<%@include  file="/adminheader.html" %>
 
 <%
     boolean isEditable = false;
@@ -12,7 +13,8 @@
         String id = request.getParameter("id");
         isEditable = true;
         try {
-            product = SiteDAO.instanceData.getProduct(Integer.parseInt(id));
+            List<Product> productList = SiteDAO.instanceData.getProduct(Integer.parseInt(id));
+            product=productList.get(0);
         } catch (SQLException e) {
             e.printStackTrace();
         }

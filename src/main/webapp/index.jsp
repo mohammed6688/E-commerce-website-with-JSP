@@ -6,7 +6,7 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 
-<%--<jsp:include page="header.html"/>--%>
+<%--<jsp:include page="loginheader.html"/>--%>
 
 <%@include file="/header.html" %>
 
@@ -35,6 +35,7 @@
                         <%
                             try {
                                 List<Product> product = SiteDAO.instanceData.getProducts();
+                                product.subList(3,product.size()).clear();
                                 int num = 0;
                                 for (Product i : product) {
                                     num++;
@@ -138,6 +139,7 @@
                     <%
                         try {
                             List<Product> product = SiteDAO.instanceData.getProducts();
+                            product.subList(9,product.size()).clear();
                             for (Product i : product) {
                     %>
                     <div class="col-sm-4">

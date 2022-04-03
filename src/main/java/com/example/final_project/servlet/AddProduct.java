@@ -13,7 +13,7 @@ import java.sql.*;
 public class AddProduct extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("header.html").include(request,response);
+        request.getRequestDispatcher("loginheader.html").include(request,response);
         request.getRequestDispatcher("addProduct.jsp").include(request,response);
         request.getRequestDispatcher("footer.html").include(request,response);
 

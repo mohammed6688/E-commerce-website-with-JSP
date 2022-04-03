@@ -48,7 +48,7 @@
 
     String mode = request.getParameter("mode");
 
-
+    System.out.println("mode is "+mode);
 
     if (mode!=null && mode.equals("signin")){
         String email = request.getParameter("email");
@@ -153,8 +153,8 @@
                     new PhoneNumber("+14433314574"),
                     "your code is: "+code).create();
             System.out.println(message.getSid());
-
-
+            response.sendRedirect("phoneValidate.jsp");
+            /*
             HttpSession httpSession =request.getSession(true);
             httpSession.setAttribute("sms_code",code);
             httpSession.setAttribute("name",userName);
@@ -170,14 +170,13 @@
 
             String res = SiteDAO.instanceData.checkSignUp(false,userName,Date.valueOf(getBirthdate),password,Integer.parseInt(PhoneNumber),getJob,email,Integer.parseInt(getCreditLimit),getAddress,getInterests);
             if (res.equals("SignedUp Successfully")){
-                httpSession.setAttribute("logged in","true");
-                response.sendRedirect("index.jsp");
+//                httpSession.setAttribute("logged in","true");
+                response.sendRedirect("login.jsp");
             }else {
                 System.out.println(res);
                 error = "register_error";
                 response.sendRedirect("login.jsp?" + error);
-            }
-//            response.sendRedirect("phoneValidate.jsp");
+            }*/
         } else {
             System.out.println("error: "+error);
             response.sendRedirect("login.jsp?"+error);

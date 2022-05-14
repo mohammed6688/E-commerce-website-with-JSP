@@ -1,8 +1,9 @@
 <%@ page import="com.example.final_project.modules.Product" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.example.final_project.modules.SiteDAO" %>
 <%@ page import="java.sql.SQLException" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="com.example.final_project.modules.SiteParser" %>
+<%@ page import="com.example.final_project.modules.SiteDAO" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 
@@ -33,12 +34,17 @@
 
                     <div class="carousel-inner">
                         <%
-                            try {
-                                List<Product> product = SiteDAO.instanceData.getProducts();
-                                int num = 0;
-                                for (Product i : product) {
-                                    num++;
-                                    if (num == 1) {
+                            List<Product> prod = SiteParser.instanceData.getProducts();
+                            System.out.println(prod.size());
+//                            prod.subList(3, prod.size()).clear();
+                            List<Product> newProd=new ArrayList<>();
+                            newProd.add(prod.get(0));
+                            newProd.add(prod.get(1));
+                            newProd.add(prod.get(2));
+                            int num = 0;
+                            for (Product i : newProd) {
+                                num++;
+                                if (num == 1) {
                         %>
                         <div class="item active">
                             <%
@@ -62,9 +68,6 @@
                                 </div>
                             </div>
                             <%
-                                    }
-                                } catch (SQLException e) {
-                                    e.printStackTrace();
                                 }
                             %>
 
@@ -81,6 +84,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>
 <!--/slider-->
 
@@ -94,23 +98,20 @@
                     <div class="panel-group category-products" id="accordian"><!--category-productsr-->
 
                         <%
-                            List<String> cat =new ArrayList<>();
-                            try {
-                                List<Product> product = SiteDAO.instanceData.getProducts();
-                                for (Product i : product) {
-                                    if (!cat.contains(i.getCategory())) {
-                                        cat.add(i.getCategory());
-                                    }
+                            List<String> cat = new ArrayList<>();
+                            List<Product> product = SiteParser.instanceData.getProducts();
+                            for (Product i : product) {
+                                if (!cat.contains(i.getCategory())) {
+                                    cat.add(i.getCategory());
                                 }
-                            } catch (SQLException e) {
-                            e.printStackTrace();
                             }
                             for (String st : cat) {
                         %>
 
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="panel-title"><a href="#"><%=st%></a></h4>
+                                <h4 class="panel-title"><a href="#"><%=st%>
+                                </a></h4>
                             </div>
                         </div>
                         <%
@@ -136,24 +137,30 @@
                     <h2 class="title text-center">Features Items</h2>
 
                     <%
-                        try {
-                            List<Product> product = SiteDAO.instanceData.getProducts();
-                            for (Product i : product) {
+                        List<Product> pro = SiteParser.instanceData.getProducts();
+                        pro.subList(9, pro.size()).clear();
+                        for (Product i : pro) {
                     %>
                     <div class="col-sm-4">
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
                                     <img src="<%=i.getPhotoUrl()%>" alt=""/>
-                                    <h2>$<%=i.getPrice()%></h2>
-                                    <p><%=i.getTitle()%></p>
-                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>View Product</a>
+                                    <h2>$<%=i.getPrice()%>
+                                    </h2>
+                                    <p><%=i.getTitle()%>
+                                    </p>
+                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>View
+                                        Product</a>
                                 </div>
                                 <div class="product-overlay">
                                     <div class="overlay-content">
-                                        <h2>$<%=i.getPrice()%></h2>
-                                        <p><%=i.getTitle()%></p>
-                                        <a href="product-details.jsp?id=<%=i.getId()%>" class="btn btn-default add-to-cart"><i
+                                        <h2>$<%=i.getPrice()%>
+                                        </h2>
+                                        <p><%=i.getTitle()%>
+                                        </p>
+                                        <a href="product-details.jsp?id=<%=i.getId()%>"
+                                           class="btn btn-default add-to-cart"><i
                                                 class="fa fa-shopping-cart"></i>View Product</a>
                                     </div>
                                 </div>
@@ -161,9 +168,6 @@
                         </div>
                     </div>
                     <%
-                            }
-                        } catch (SQLException e) {
-                            e.printStackTrace();
                         }
                     %>
 

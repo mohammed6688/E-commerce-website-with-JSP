@@ -1,8 +1,9 @@
-<%@ page import="com.example.final_project.modules.SiteDAO" %>
 <%@ page import="java.sql.SQLException" %>
 <%@ page import="com.example.final_project.modules.Product" %>
-<%@include  file="/loginheader.html" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.example.final_project.modules.SiteParser" %>
 
+<%@include  file="/adminheader.html" %>
 
 <%
     boolean isEditable = false;
@@ -11,11 +12,8 @@
     if (mode != null && mode.equals("edit")) {
         String id = request.getParameter("id");
         isEditable = true;
-        try {
-            product = SiteDAO.instanceData.getProduct(Integer.parseInt(id));
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        List<Product> productList = SiteParser.instanceData.getProduct(Integer.parseInt(id));
+        product=productList.get(0);
     }else if (mode != null && mode.equals("add")){
         String title=request.getParameter("Title");
         int Price= Integer.parseInt(request.getParameter("Price"));
@@ -23,15 +21,11 @@
         String photoUrl=request.getParameter("photoUrl");
         String details=request.getParameter("details");
         String category=request.getParameter("category");
-        try {
-            int value =SiteDAO.instanceData.AddProduct(title,Price,Quantity,photoUrl,details,category);
-            if (value==1){
+        int value =SiteParser.instanceData.AddProduct(title,Price,Quantity,photoUrl,details,category);
+        if (value==1){
 
-            }else {
+        }else {
 
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
     }
 

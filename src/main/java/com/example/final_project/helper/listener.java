@@ -1,6 +1,7 @@
 package com.example.final_project.helper;
 
 import com.example.final_project.modules.SiteDAO;
+import com.example.final_project.modules.SiteParser;
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 
@@ -11,6 +12,7 @@ import java.sql.SQLException;
 public class listener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
+        new SiteParser();
         String DB_NAME = (String) sce.getServletContext().getInitParameter("DB_NAME");
         String USER = (String) sce.getServletContext().getInitParameter("USER_NAME");
         String PASS = (String) sce.getServletContext().getInitParameter("USER_PASSWORD");

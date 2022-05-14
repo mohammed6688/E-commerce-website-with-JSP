@@ -14,7 +14,14 @@
           <element id="module-output" name="final_project" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: com.twilio.sdk:twilio:8.27.0" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.5" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.5" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.9.0" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-client:1.19.4" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.19.4" />
+          <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.1.1" />
+          <element id="library" level="project" name="Maven: com.twilio.sdk:twilio:8.29.1" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.15" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.7" />
           <element id="library" level="project" name="Maven: io.jsonwebtoken:jjwt-api:0.11.2" />
@@ -33,7 +40,6 @@
           <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.1" />
           <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:4.2.1" />
           <element id="library" level="project" name="Maven: com.fasterxml.woodstox:woodstox-core:6.2.4" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.30" />
           <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.3.1" />
           <element id="library" level="project" name="Maven: javax.activation:javax.activation-api:1.2.0" />
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.3.2" />

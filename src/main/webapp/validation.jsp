@@ -2,9 +2,9 @@
 <%@ page import="com.twilio.rest.api.v2010.account.Message" %>
 <%@ page import="com.twilio.type.PhoneNumber" %>
 <%@ page import="java.util.Random" %>
-<%@ page import="com.example.final_project.modules.SiteDAO" %>
 <%@ page import="java.sql.Date" %>
 <%@ page import="com.example.final_project.modules.User" %>
+<%@ page import="com.example.final_project.modules.SiteParser" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -13,7 +13,7 @@
 <body>
 <%!
     public static final String ACCOUNT_SID = "ACceb4ceec732d6b9e1719d2906fc117ae";
-    public static final String AUTH_TOKEN = "60a80e1c593fb93ba0b3e28bed0dd294";
+    public static final String AUTH_TOKEN = "c43464447ec4552875a574cdf6c870e8";
     private void signUp(){}
 
 
@@ -71,7 +71,7 @@
         if (emailFlag && passFlag) {
             //verifies phone number logic here
             User user;
-            user = SiteDAO.instanceData.checkSignIn(email,password);
+            user = SiteParser.instanceData.checkSignIn(email,password);
 
             if (user!=null) {
                 HttpSession httpSession = request.getSession(true);
@@ -215,7 +215,7 @@
             String address = (String)httpSession.getAttribute("address");
             String interests = (String)httpSession.getAttribute("interests");
 
-            String res = SiteDAO.instanceData.checkSignUp(false,name,Date.valueOf(birthdate),pass,Integer.parseInt(phone),job,mail,Integer.parseInt(creditlimit),address,interests);
+            String res = SiteParser.instanceData.checkSignUp(false,name,Date.valueOf(birthdate),pass,Integer.parseInt(phone),job,mail,Integer.parseInt(creditlimit),address,interests);
             if (res.equals("success")){
                 httpSession.setAttribute("logged in","true");
                 response.sendRedirect("index.jsp");

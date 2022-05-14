@@ -4,6 +4,7 @@ import java.io.*;
 
 import com.example.final_project.modules.Product;
 import com.example.final_project.modules.SiteDAO;
+import com.example.final_project.modules.SiteParser;
 import com.example.final_project.modules.User;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Call;
@@ -24,7 +25,7 @@ public class HelloServlet extends HttpServlet {
     private String message;
 
     public static final String ACCOUNT_SID = "ACceb4ceec732d6b9e1719d2906fc117ae";
-    public static final String AUTH_TOKEN = "60a80e1c593fb93ba0b3e28bed0dd294";
+    public static final String AUTH_TOKEN = "c43464447ec4552875a574cdf6c870e8";
 
     public void init() {
         message = "Hello World!";
@@ -50,17 +51,13 @@ public class HelloServlet extends HttpServlet {
 //        out.println("<h1>" + message + "</h1>");
 //        out.println("</body></html>");
 
-        User user=new User(2,false,"","","",0112602446,"","",400,"","");
+        User user=new User(2,false,"","","",112602446,"","",400,"","");
 
         String value= null;
-        try {
-            value = SiteDAO.instanceData.checkout(user,SiteDAO.instanceData.getProducts(),SiteDAO.instanceData.getCart());
-            System.out.println(value);
-            if (value.equals("success")){
-                System.out.println("run successfully");
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
+        value = SiteParser.instanceData.checkout(user);
+        System.out.println(value);
+        if (value.equals("success")){
+            System.out.println("run successfully");
         }
 
 //        List<Product> products=new ArrayList<>();

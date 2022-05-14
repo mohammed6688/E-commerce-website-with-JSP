@@ -1,7 +1,7 @@
-<%@ page import="com.example.final_project.modules.SiteDAO" %>
 <%@ page import="com.example.final_project.modules.Product" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.sql.SQLException" %><%--
+<%@ page import="java.sql.SQLException" %>
+<%@ page import="com.example.final_project.modules.SiteParser" %><%--
   Created by IntelliJ IDEA.
   User: moham
   Date: 3/25/2022
@@ -51,55 +51,51 @@
             </thead>
             <tbody>
             <%
-                try {
-                    List<Product> product;
-                    if (request.getParameter("mode")!=null && request.getParameter("mode").equals("search")){
-                        String keyword = request.getParameter("search");
-                        if (isNumeric(keyword)){
-                            product = SiteDAO.instanceData.getProduct(Integer.parseInt(keyword));
-                        }else {
-                            product = SiteDAO.instanceData.getProduct(keyword);
-                        }
+                List<Product> product;
+                if (request.getParameter("mode")!=null && request.getParameter("mode").equals("search")){
+                    String keyword = request.getParameter("search");
+                    if (isNumeric(keyword)){
+                        product = SiteParser.instanceData.getProduct(Integer.parseInt(keyword));
                     }else {
-                        product = SiteDAO.instanceData.getProducts();
+                        product = SiteParser.instanceData.getProduct(keyword);
                     }
-                    for (Product i : product) {
+                }else {
+                    product = SiteParser.instanceData.getProducts();
+                }
+                for (Product i : product) {
 
-            %>
-            <tr>
-                <td class="cart_product">
-                    <a href=""><img width="60" height="60" src="<%=i.getPhotoUrl()%>" alt=""></a>
-                </td>
-                <td class="cart_description">
-                    <h4><a href=""><%=i.getTitle()%>
-                    </a></h4>
-                    <p>Web ID:<%=i.getId()%>
+        %>
+        <tr>
+            <td class="cart_product">
+                <a href=""><img width="60" height="60" src="<%=i.getPhotoUrl()%>" alt=""></a>
+            </td>
+            <td class="cart_description">
+                <h4><a href=""><%=i.getTitle()%>
+                </a></h4>
+                <p>Web ID:<%=i.getId()%>
+                </p>
+            </td>
+            <td class="cart_price">
+                <p><%=i.getPrice()%>
+                </p>
+            </td>
+            <td class="cart_quantity">
+                <div class="cart_quantity_button">
+                    <p><%=i.getQuantity()%>
                     </p>
-                </td>
-                <td class="cart_price">
-                    <p><%=i.getPrice()%>
-                    </p>
-                </td>
-                <td class="cart_quantity">
-                    <div class="cart_quantity_button">
-                        <p><%=i.getQuantity()%>
-                        </p>
-                    </div>
-                </td>
-                <td class="cart_edit">
-                    <a class="cart_quantity_edit" href="addProduct.jsp?mode=edit&id=<%=i.getId()%>"><i
-                            class="fa fa-times"></i></a>
-                </td>
-                <td class="cart_delete">
-                    <a class="cart_quantity_delete" href="admin.jsp?mode=delete&id=<%=i.getId()%>"><i
-                            class="fa fa-times"></i></a>
-                </td>
-            </tr>
+                </div>
+            </td>
+            <td class="cart_edit">
+                <a class="cart_quantity_edit" href="addProduct.jsp?mode=edit&id=<%=i.getId()%>"><i
+                        class="fa fa-times"></i></a>
+            </td>
+            <td class="cart_delete">
+                <a class="cart_quantity_delete" href="admin.jsp?mode=delete&id=<%=i.getId()%>"><i
+                        class="fa fa-times"></i></a>
+            </td>
+        </tr>
 
-            <%
-                    }
-                } catch (SQLException e) {
-                    e.printStackTrace();
+        <%
                 }
             %>
 

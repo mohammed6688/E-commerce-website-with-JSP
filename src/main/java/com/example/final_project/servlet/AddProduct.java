@@ -1,6 +1,7 @@
 package com.example.final_project.servlet;
 
 import com.example.final_project.modules.SiteDAO;
+import com.example.final_project.modules.SiteParser;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -23,15 +24,11 @@ public class AddProduct extends HttpServlet {
             int Quantity= Integer.parseInt(request.getParameter("Quantity"));
             int id=Integer.parseInt(request.getParameter("id"));
 
-            try {
-                int value =SiteDAO.instanceData.editProduct(Price,Quantity,id);
-                if (value==1){
-                    System.out.println("success edited");
-                }else {
-                    System.out.println("failed edited");
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
+            int value = SiteParser.instanceData.editProduct(Price,Quantity,id);
+            if (value==1){
+                System.out.println("success edited");
+            }else {
+                System.out.println("failed edited");
             }
 
         }
@@ -46,15 +43,11 @@ public class AddProduct extends HttpServlet {
         String details=request.getParameter("details");
         String category=request.getParameter("category");
 
-        try {
-            int value =SiteDAO.instanceData.AddProduct(title,Price,Quantity,photoUrl,details,category);
-            if (value==1){
+        int value =SiteParser.instanceData.AddProduct(title,Price,Quantity,photoUrl,details,category);
+        if (value==1){
 
-            }else {
+        }else {
 
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
 
     }

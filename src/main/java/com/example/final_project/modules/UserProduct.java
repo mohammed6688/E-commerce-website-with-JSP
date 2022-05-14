@@ -10,6 +10,9 @@ public class UserProduct {
     String category;
     int orderedQuantity;
 
+    public UserProduct() {
+    }
+
     public UserProduct(int id, String title, int price, int quantity, String photoUrl, String details, String category, int orderedQuantity) {
         this.id = id;
         this.title = title;

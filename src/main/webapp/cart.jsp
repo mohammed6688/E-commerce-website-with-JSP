@@ -1,9 +1,6 @@
-<%@ page import="com.example.final_project.modules.Product" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.example.final_project.modules.SiteDAO" %>
 <%@ page import="java.sql.SQLException" %>
-<%@ page import="com.example.final_project.modules.Cart" %>
-<%@ page import="com.example.final_project.modules.UserProduct" %>
+<%@ page import="com.example.final_project.modules.*" %>
 <!DOCTYPE html>
 <%@include file="/header.html" %>
 
@@ -22,21 +19,13 @@
     }
     String delete =request.getParameter("delete");
     if (delete!=null){
-        try {
-            SiteDAO.instanceData.deleteFromCart(Integer.parseInt(delete),userid);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        SiteParser.instanceData.deleteFromCart(Integer.parseInt(delete),userid);
     }
     String id =request.getParameter("id");
     String quantity =request.getParameter("quantity");
     if (id!=null) {
-        try {
-            Cart cart = new Cart(Integer.parseInt(id),userid,Integer.parseInt(quantity));
-            SiteDAO.instanceData.addToCart(cart);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        Cart cart = new Cart(Integer.parseInt(id),userid,Integer.parseInt(quantity));
+        SiteParser.instanceData.addToCart(cart);
     }
 
 %>
@@ -65,47 +54,43 @@
                 <%
                     int totalPrice = 0;
 
-                    try {
-                        List<Cart> cartList = SiteDAO.instanceData.getCart();
-                        List<Product> productList = SiteDAO.instanceData.getProducts();
-                        for (Cart cart : cartList) {
-                            for (Product product : productList) {
-                                if (userid == cart.getUserId() && cart.getProductId() == product.getId()) { //check for the ownership of the cart for that user
-                %>
-                <tr>
-                    <td class="cart_product">
-                        <a href=""><img width="60" height="60" src="<%=product.getPhotoUrl()%>" alt=""></a>
-                    </td>
-                    <td class="cart_description">
-                        <h4><a href=""><%=product.getTitle()%></a></h4>
-                        <p>Web ID: <%=product.getId()%></p>
-                    </td>
-                    <td class="cart_price">
-                        <p>$<%=product.getPrice()%></p>
-                    </td>
-                    <td class="cart_quantity">
-                        <div class="cart_quantity_button">
-                            <a class="cart_quantity_up" href="#"> + </a>
-                            <input class="cart_quantity_input" type="text" name="quantity" value="<%=cart.getQuantity()%>" autocomplete="off"
-                                   size="2">
-                            <a class="cart_quantity_down" href="#"> - </a>
-                        </div>
-                    </td>
-                    <td class="cart_total">
-                        <p class="cart_total_price">$<%=product.getPrice()*cart.getQuantity()%></p>
-                    </td>
-                    <td class="cart_delete">
-                        <a class="cart_quantity_delete" href="cart.jsp?delete=<%=product.getId()%>"><i class="fa fa-times"></i></a>
-                    </td>
-                </tr>
-                <%
-                                    totalPrice += product.getPrice()*cart.getQuantity();
+                    List<Cart> cartList = SiteParser.instanceData.getCart();
+                    List<Product> productList = SiteParser.instanceData.getProducts();
+                    for (Cart cart : cartList) {
+                        for (Product product : productList) {
+                            if (userid == cart.getUserId() && cart.getProductId() == product.getId()) { //check for the ownership of the cart for that user
+            %>
+            <tr>
+                <td class="cart_product">
+                    <a href=""><img width="60" height="60" src="<%=product.getPhotoUrl()%>" alt=""></a>
+                </td>
+                <td class="cart_description">
+                    <h4><a href=""><%=product.getTitle()%></a></h4>
+                    <p>Web ID: <%=product.getId()%></p>
+                </td>
+                <td class="cart_price">
+                    <p>$<%=product.getPrice()%></p>
+                </td>
+                <td class="cart_quantity">
+                    <div class="cart_quantity_button">
+                        <a class="cart_quantity_up" href="#"> + </a>
+                        <input class="cart_quantity_input" type="text" name="quantity" value="<%=cart.getQuantity()%>" autocomplete="off"
+                               size="2">
+                        <a class="cart_quantity_down" href="#"> - </a>
+                    </div>
+                </td>
+                <td class="cart_total">
+                    <p class="cart_total_price">$<%=product.getPrice()*cart.getQuantity()%></p>
+                </td>
+                <td class="cart_delete">
+                    <a class="cart_quantity_delete" href="cart.jsp?delete=<%=product.getId()%>"><i class="fa fa-times"></i></a>
+                </td>
+            </tr>
+            <%
+                                totalPrice += product.getPrice()*cart.getQuantity();
 
-                                }
                             }
                         }
-                    } catch (SQLException e) {
-                        e.printStackTrace();
                     }
                 %>
                 </tbody>

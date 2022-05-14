@@ -14,6 +14,9 @@ public class User {
     String interests;
     boolean status;
 
+    public User() {
+    }
+
     public User(int id, boolean admin, String name, String birthDate, String password, int phoneNumber, String jop, String email, int creditLimit, String address, String interests) {
         this.id = id;
         this.admin = admin;

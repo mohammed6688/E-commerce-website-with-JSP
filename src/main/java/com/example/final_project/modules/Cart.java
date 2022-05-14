@@ -5,6 +5,9 @@ public class Cart{
     int userId;
     int quantity;
 
+    public Cart() {
+    }
+
     public Cart(int productId, int userId, int quantity) {
         this.productId = productId;
         this.userId = userId;

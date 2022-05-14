@@ -1,8 +1,8 @@
 <%@ page import="java.sql.SQLException" %>
 <%@ page import="com.example.final_project.modules.Product" %>
-<%@ page import="com.example.final_project.modules.SiteDAO" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="com.example.final_project.modules.SiteParser" %>
 <%@include file="/header.html" %>
 	
 	<section id="advertisement">
@@ -20,16 +20,12 @@
 						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
 							<%
 								List<String> cat =new ArrayList<>();
-								try {
-									List<Product> product = SiteDAO.instanceData.getProducts();
-									product.subList(9,product.size()).clear();
-									for (Product i : product) {
-										if (!cat.contains(i.getCategory())) {
-											cat.add(i.getCategory());
-										}
+								List<Product> product = SiteParser.instanceData.getProducts();
+								product.subList(9,product.size()).clear();
+								for (Product i : product) {
+									if (!cat.contains(i.getCategory())) {
+										cat.add(i.getCategory());
 									}
-								} catch (SQLException e) {
-									e.printStackTrace();
 								}
 								for (String st : cat) {
 							%>
@@ -58,35 +54,31 @@
 					<div class="features_items"><!--features_items-->
 						<h2 class="title text-center">Features Items</h2>
 						<%
-							try {
-								List<Product> product = SiteDAO.instanceData.getProducts();
-								for (Product i : product) {
-						%>
+							List<Product> prod = SiteParser.instanceData.getProducts();
+							for (Product i : prod) {
+					%>
 
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="<%=i.getPhotoUrl()%>" alt=""/>
+					<div class="col-sm-4">
+						<div class="product-image-wrapper">
+							<div class="single-products">
+								<div class="productinfo text-center">
+									<img src="<%=i.getPhotoUrl()%>" alt=""/>
+									<h2>$<%=i.getPrice()%></h2>
+									<p><%=i.getTitle()%></p>
+									<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>View Product</a>
+								</div>
+								<div class="product-overlay">
+									<div class="overlay-content">
 										<h2>$<%=i.getPrice()%></h2>
 										<p><%=i.getTitle()%></p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>View Product</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>$<%=i.getPrice()%></h2>
-											<p><%=i.getTitle()%></p>
-											<a href="product-details.jsp?id=<%=i.getId()%>" class="btn btn-default add-to-cart"><i
-													class="fa fa-shopping-cart"></i>View Product</a>
-										</div>
+										<a href="product-details.jsp?id=<%=i.getId()%>" class="btn btn-default add-to-cart"><i
+												class="fa fa-shopping-cart"></i>View Product</a>
 									</div>
 								</div>
 							</div>
 						</div>
-						<%
-								}
-							} catch (SQLException e) {
-								e.printStackTrace();
+					</div>
+					<%
 							}
 						%>
 						<ul class="pagination">

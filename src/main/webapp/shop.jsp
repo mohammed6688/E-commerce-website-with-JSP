@@ -21,7 +21,11 @@
 							<%
 								List<String> cat =new ArrayList<>();
 								List<Product> product = SiteParser.instanceData.getProducts();
-								product.subList(9,product.size()).clear();
+								List<Product> newFeatureProd=new ArrayList<>();
+								for (int i=0;i<=8;i++){
+									newFeatureProd.add(product.get(i));
+								}
+//								product.subList(9,product.size()).clear();
 								for (Product i : product) {
 									if (!cat.contains(i.getCategory())) {
 										cat.add(i.getCategory());

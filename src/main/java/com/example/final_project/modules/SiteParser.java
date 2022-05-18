@@ -128,6 +128,7 @@ public class SiteParser {
             return 1;
         } else {
             System.out.println(response.getStatus());
+            System.out.println(res);
             return  -1;
         }
     }

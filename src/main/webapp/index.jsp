@@ -138,8 +138,13 @@
 
                     <%
                         List<Product> pro = SiteParser.instanceData.getProducts();
-                        pro.subList(9, pro.size()).clear();
-                        for (Product i : pro) {
+
+                        List<Product> newFeatureProd=new ArrayList<>();
+                        for (int i=0;i<=8;i++){
+                            newFeatureProd.add(pro.get(i));
+                        }
+//                        pro.subList(9, pro.size()).clear();
+                        for (Product i : newFeatureProd) {
                     %>
                     <div class="col-sm-4">
                         <div class="product-image-wrapper">

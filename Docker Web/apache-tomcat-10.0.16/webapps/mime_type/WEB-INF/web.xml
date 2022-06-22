@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.example.lab_2.XML</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/xml</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>excel</servlet-name>
+        <servlet-class>com.example.lab_2.excel</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>excel</servlet-name>
+        <url-pattern>/excel</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Word</servlet-name>
+        <servlet-class>com.example.lab_2.Word</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Word</servlet-name>
+        <url-pattern>/word</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servletconfig</servlet-name>
+        <servlet-class>com.example.lab_2.servletconfig</servlet-class>
+        <init-param>
+            <param-name>DatabaseAddress</param-name>
+            <param-value> 163.121.12.25 </param-value>
+        </init-param>
+        <init-param>
+            <param-name>userName</param-name>
+            <param-value> iTi </param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value> iTi </param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletconfig</servlet-name>
+        <url-pattern>/servletconfig</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Counter</servlet-name>
+        <servlet-class>com.example.lab_2.Counter</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Counter</servlet-name>
+        <url-pattern>/counter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>registerForm</servlet-name>
+        <servlet-class>com.example.lab_2.registerForm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerForm</servlet-name>
+        <url-pattern>/registerForm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>viewUsers</servlet-name>
+        <servlet-class>com.example.lab_2.viewUsers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>viewUsers</servlet-name>
+        <url-pattern>/viewUsers</url-pattern>
+    </servlet-mapping>
+</web-app>

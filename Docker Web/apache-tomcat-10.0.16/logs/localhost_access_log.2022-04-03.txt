@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [03/Apr/2022:22:17:40 +0200] "GET /E_Shopper/index.jsp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [03/Apr/2022:22:17:40 +0200] "GET /E_Shopper/login.jsp HTTP/1.1" 200 9315
+0:0:0:0:0:0:0:1 - - [03/Apr/2022:22:17:40 +0200] "GET /E_Shopper/images/ico/favicon.ico HTTP/1.1" 404 2107
+0:0:0:0:0:0:0:1 - - [03/Apr/2022:22:17:50 +0200] "GET /E_Shopper/validation.jsp?mode=signin&email=mohammed668800.ma%40gmail.com&pass=1502654 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [03/Apr/2022:22:17:50 +0200] "GET /E_Shopper/index.jsp HTTP/1.1" 200 29413
+0:0:0:0:0:0:0:1 - - [03/Apr/2022:22:17:50 +0200] "GET /E_Shopper/images/ico/favicon.ico HTTP/1.1" 404 2107
+0:0:0:0:0:0:0:1 - - [03/Apr/2022:22:17:56 +0200] "GET /E_Shopper/index.jsp HTTP/1.1" 200 29413
+0:0:0:0:0:0:0:1 - - [03/Apr/2022:22:17:57 +0200] "GET /E_Shopper/images/ico/favicon.ico HTTP/1.1" 404 2107
+0:0:0:0:0:0:0:1 - - [03/Apr/2022:22:17:59 +0200] "GET /E_Shopper/cart.jsp HTTP/1.1" 200 10210
+0:0:0:0:0:0:0:1 - - [03/Apr/2022:22:18:00 +0200] "GET /E_Shopper/images/ico/favicon.ico HTTP/1.1" 404 2107

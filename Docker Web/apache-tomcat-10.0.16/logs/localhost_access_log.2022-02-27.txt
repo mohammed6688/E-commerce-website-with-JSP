@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:31:47 +0200] "POST /mime_type/viewUsers HTTP/1.1" 200 782
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:31:54 +0200] "GET /mime_type/viewUsers HTTP/1.1" 200 1090
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:31:57 +0200] "GET /mime_type/viewUsers HTTP/1.1" 200 1090
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:31:58 +0200] "GET /mime_type/viewUsers HTTP/1.1" 200 1090
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:32:01 +0200] "POST /mime_type/viewUsers HTTP/1.1" 200 1090
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:32:18 +0200] "GET /mime_type/registerForm HTTP/1.1" 200 867
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:32:32 +0200] "POST /mime_type/registerForm HTTP/1.1" 200 25
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:32:41 +0200] "GET /mime_type/viewUsers HTTP/1.1" 200 1242
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:32:57 +0200] "GET /mime_type/counter HTTP/1.1" 200 3
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:32:58 +0200] "GET /mime_type/counter HTTP/1.1" 200 3
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:32:59 +0200] "GET /mime_type/counter HTTP/1.1" 200 3
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:33:15 +0200] "GET /mime_type/servletconfig HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [27/Feb/2022:19:33:29 +0200] "GET /mime_type/xml HTTP/1.1" 200 535

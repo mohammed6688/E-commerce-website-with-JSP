@@ -1,0 +1,726 @@
+21-Feb-2022 13:56:11.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+21-Feb-2022 13:56:11.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+21-Feb-2022 13:56:11.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+21-Feb-2022 13:56:11.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+21-Feb-2022 13:56:11.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+21-Feb-2022 13:56:11.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Feb-2022 13:56:11.533 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+21-Feb-2022 13:56:11.533 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+21-Feb-2022 13:56:11.533 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+21-Feb-2022 13:56:11.534 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+21-Feb-2022 13:56:11.534 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+21-Feb-2022 13:56:11.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/conf/logging.properties
+21-Feb-2022 13:56:11.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Feb-2022 13:56:11.535 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+21-Feb-2022 13:56:11.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Feb-2022 13:56:11.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+21-Feb-2022 13:56:11.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+21-Feb-2022 13:56:11.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+21-Feb-2022 13:56:11.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+21-Feb-2022 13:56:11.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/temp
+21-Feb-2022 13:56:11.550 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+21-Feb-2022 13:56:12.259 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+21-Feb-2022 13:56:12.300 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1170] milliseconds
+21-Feb-2022 13:56:12.357 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+21-Feb-2022 13:56:12.358 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+21-Feb-2022 13:56:12.376 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs]
+21-Feb-2022 13:56:13.166 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [381] milliseconds.
+21-Feb-2022 13:56:13.196 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs] has finished in [821] ms
+21-Feb-2022 13:56:13.197 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples]
+21-Feb-2022 13:56:13.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples] has finished in [671] ms
+21-Feb-2022 13:56:13.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager]
+21-Feb-2022 13:56:13.927 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager] has finished in [58] ms
+21-Feb-2022 13:56:13.928 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager]
+21-Feb-2022 13:56:13.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager] has finished in [54] ms
+21-Feb-2022 13:56:13.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT]
+21-Feb-2022 13:56:14.023 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT] has finished in [40] ms
+21-Feb-2022 13:56:14.028 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+21-Feb-2022 13:56:14.063 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1760] milliseconds
+21-Feb-2022 14:02:29.042 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite]
+21-Feb-2022 14:02:29.079 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite] has finished in [38] ms
+21-Feb-2022 15:54:16.232 WARNING [main] org.apache.catalina.core.StandardServer.await Invalid shutdown command [] received
+21-Feb-2022 15:54:56.430 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+21-Feb-2022 15:54:56.431 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+21-Feb-2022 15:54:56.783 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+21-Feb-2022 15:54:57.109 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+21-Feb-2022 15:54:57.124 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 19:12:08.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+24-Feb-2022 19:12:08.731 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+24-Feb-2022 19:12:08.731 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+24-Feb-2022 19:12:08.731 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Feb-2022 19:12:08.731 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Feb-2022 19:12:08.732 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Feb-2022 19:12:08.732 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+24-Feb-2022 19:12:08.732 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+24-Feb-2022 19:12:08.732 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Feb-2022 19:12:08.732 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+24-Feb-2022 19:12:08.732 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+24-Feb-2022 19:12:08.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/conf/logging.properties
+24-Feb-2022 19:12:08.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Feb-2022 19:12:08.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Feb-2022 19:12:08.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Feb-2022 19:12:08.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+24-Feb-2022 19:12:08.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-Feb-2022 19:12:08.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+24-Feb-2022 19:12:08.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+24-Feb-2022 19:12:08.737 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/temp
+24-Feb-2022 19:12:08.745 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+24-Feb-2022 19:12:09.552 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 19:12:09.605 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1299] milliseconds
+24-Feb-2022 19:12:09.684 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Feb-2022 19:12:09.684 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+24-Feb-2022 19:12:09.715 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_2-1.0-SNAPSHOT.war]
+24-Feb-2022 19:12:10.313 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [239] milliseconds.
+24-Feb-2022 19:12:10.340 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_2-1.0-SNAPSHOT.war] has finished in [625] ms
+24-Feb-2022 19:12:10.341 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs]
+24-Feb-2022 19:12:10.366 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs] has finished in [25] ms
+24-Feb-2022 19:12:10.366 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples]
+24-Feb-2022 19:12:11.176 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples] has finished in [810] ms
+24-Feb-2022 19:12:11.177 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager]
+24-Feb-2022 19:12:11.223 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager] has finished in [47] ms
+24-Feb-2022 19:12:11.223 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1_1]
+24-Feb-2022 19:12:11.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1_1] has finished in [35] ms
+24-Feb-2022 19:12:11.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager]
+24-Feb-2022 19:12:11.295 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager] has finished in [36] ms
+24-Feb-2022 19:12:11.295 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT]
+24-Feb-2022 19:12:11.325 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT] has finished in [29] ms
+24-Feb-2022 19:12:11.325 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite]
+24-Feb-2022 19:12:11.348 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite] has finished in [23] ms
+24-Feb-2022 19:12:11.353 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 19:12:11.383 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1776] milliseconds
+24-Feb-2022 19:13:37.182 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Feb-2022 19:13:37.183 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 19:13:37.408 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Feb-2022 19:13:37.462 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 19:13:37.473 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:05:59.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+24-Feb-2022 20:05:59.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+24-Feb-2022 20:05:59.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+24-Feb-2022 20:05:59.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Feb-2022 20:05:59.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Feb-2022 20:05:59.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Feb-2022 20:05:59.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+24-Feb-2022 20:05:59.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+24-Feb-2022 20:05:59.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Feb-2022 20:05:59.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+24-Feb-2022 20:05:59.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+24-Feb-2022 20:05:59.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/conf/logging.properties
+24-Feb-2022 20:05:59.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Feb-2022 20:05:59.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Feb-2022 20:05:59.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Feb-2022 20:05:59.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+24-Feb-2022 20:05:59.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-Feb-2022 20:05:59.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+24-Feb-2022 20:05:59.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+24-Feb-2022 20:05:59.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/temp
+24-Feb-2022 20:05:59.425 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+24-Feb-2022 20:06:00.143 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:06:00.182 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1065] milliseconds
+24-Feb-2022 20:06:00.222 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Feb-2022 20:06:00.222 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+24-Feb-2022 20:06:00.252 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_2-1.0-SNAPSHOT.war]
+24-Feb-2022 20:06:00.878 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [238] milliseconds.
+24-Feb-2022 20:06:00.899 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_2-1.0-SNAPSHOT.war] has finished in [646] ms
+24-Feb-2022 20:06:00.900 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs]
+24-Feb-2022 20:06:00.959 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs] has finished in [60] ms
+24-Feb-2022 20:06:00.959 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples]
+24-Feb-2022 20:06:01.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples] has finished in [592] ms
+24-Feb-2022 20:06:01.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\Gradle___com_example___lab_2_1_1_0_SNAPSHOT_war]
+24-Feb-2022 20:06:01.599 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\Gradle___com_example___lab_2_1_1_0_SNAPSHOT_war] has finished in [47] ms
+24-Feb-2022 20:06:01.600 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\helloworld]
+24-Feb-2022 20:06:01.660 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\helloworld] has finished in [61] ms
+24-Feb-2022 20:06:01.661 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager]
+24-Feb-2022 20:06:01.719 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager] has finished in [59] ms
+24-Feb-2022 20:06:01.719 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1_1]
+24-Feb-2022 20:06:01.764 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1_1] has finished in [44] ms
+24-Feb-2022 20:06:01.764 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager]
+24-Feb-2022 20:06:01.820 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager] has finished in [55] ms
+24-Feb-2022 20:06:01.820 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT]
+24-Feb-2022 20:06:01.852 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT] has finished in [32] ms
+24-Feb-2022 20:06:01.852 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite]
+24-Feb-2022 20:06:01.871 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite] has finished in [19] ms
+24-Feb-2022 20:06:01.876 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:06:01.905 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1723] milliseconds
+24-Feb-2022 20:11:03.119 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Gradle___com_example___lab_2_1_1_0_SNAPSHOT_war]
+24-Feb-2022 20:11:03.141 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/lab_2-1.0-SNAPSHOT]
+24-Feb-2022 20:11:03.148 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_2-1.0-SNAPSHOT.war]
+24-Feb-2022 20:11:03.186 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_2-1.0-SNAPSHOT.war] has finished in [38] ms
+24-Feb-2022 20:11:13.703 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/lab_2-1.0-SNAPSHOT]
+24-Feb-2022 20:12:43.800 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_2-1.0-SNAPSHOT.war]
+24-Feb-2022 20:12:43.839 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_2-1.0-SNAPSHOT.war] has finished in [38] ms
+24-Feb-2022 20:19:00.751 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Feb-2022 20:19:00.751 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:19:00.988 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Feb-2022 20:19:01.023 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:19:01.054 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:19:06.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+24-Feb-2022 20:19:06.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+24-Feb-2022 20:19:06.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+24-Feb-2022 20:19:06.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Feb-2022 20:19:06.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Feb-2022 20:19:06.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Feb-2022 20:19:06.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+24-Feb-2022 20:19:06.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+24-Feb-2022 20:19:06.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Feb-2022 20:19:06.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+24-Feb-2022 20:19:06.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+24-Feb-2022 20:19:06.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/conf/logging.properties
+24-Feb-2022 20:19:06.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Feb-2022 20:19:06.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Feb-2022 20:19:06.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Feb-2022 20:19:06.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+24-Feb-2022 20:19:06.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-Feb-2022 20:19:06.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+24-Feb-2022 20:19:06.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+24-Feb-2022 20:19:06.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/temp
+24-Feb-2022 20:19:06.707 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+24-Feb-2022 20:19:07.236 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:19:07.281 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [804] milliseconds
+24-Feb-2022 20:19:07.329 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Feb-2022 20:19:07.329 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+24-Feb-2022 20:19:07.350 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_2-1.0-SNAPSHOT.war]
+24-Feb-2022 20:19:07.953 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [222] milliseconds.
+24-Feb-2022 20:19:07.976 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_2-1.0-SNAPSHOT.war] has finished in [625] ms
+24-Feb-2022 20:19:07.976 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs]
+24-Feb-2022 20:19:08.011 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs] has finished in [35] ms
+24-Feb-2022 20:19:08.011 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples]
+24-Feb-2022 20:19:08.471 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples] has finished in [460] ms
+24-Feb-2022 20:19:08.471 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\helloworld]
+24-Feb-2022 20:19:08.504 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\helloworld] has finished in [33] ms
+24-Feb-2022 20:19:08.505 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager]
+24-Feb-2022 20:19:08.552 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager] has finished in [46] ms
+24-Feb-2022 20:19:08.552 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1_1]
+24-Feb-2022 20:19:08.602 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1_1] has finished in [50] ms
+24-Feb-2022 20:19:08.603 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager]
+24-Feb-2022 20:19:08.657 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager] has finished in [54] ms
+24-Feb-2022 20:19:08.658 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT]
+24-Feb-2022 20:19:08.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT] has finished in [38] ms
+24-Feb-2022 20:19:08.698 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite]
+24-Feb-2022 20:19:08.722 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite] has finished in [24] ms
+24-Feb-2022 20:19:08.727 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:19:08.745 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1464] milliseconds
+24-Feb-2022 20:29:48.265 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Feb-2022 20:29:48.266 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:29:48.481 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Feb-2022 20:29:48.555 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:29:48.572 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:51:18.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+24-Feb-2022 20:51:18.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+24-Feb-2022 20:51:18.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+24-Feb-2022 20:51:18.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Feb-2022 20:51:18.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Feb-2022 20:51:18.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Feb-2022 20:51:18.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+24-Feb-2022 20:51:18.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+24-Feb-2022 20:51:18.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Feb-2022 20:51:18.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+24-Feb-2022 20:51:18.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+24-Feb-2022 20:51:18.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/conf/logging.properties
+24-Feb-2022 20:51:18.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Feb-2022 20:51:18.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Feb-2022 20:51:18.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Feb-2022 20:51:18.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+24-Feb-2022 20:51:18.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-Feb-2022 20:51:18.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+24-Feb-2022 20:51:18.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+24-Feb-2022 20:51:18.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/temp
+24-Feb-2022 20:51:18.583 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+24-Feb-2022 20:51:19.414 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:51:19.449 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1055)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:244)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:199)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1184)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1197)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:580)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1052)
+		... 13 more
+24-Feb-2022 20:51:19.452 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1287] milliseconds
+24-Feb-2022 20:51:19.516 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Feb-2022 20:51:19.516 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+24-Feb-2022 20:51:19.551 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1-1.0-SNAPSHOT.war]
+24-Feb-2022 20:51:20.292 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [369] milliseconds.
+24-Feb-2022 20:51:20.339 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1-1.0-SNAPSHOT.war] has finished in [788] ms
+24-Feb-2022 20:51:20.342 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs]
+24-Feb-2022 20:51:20.423 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs] has finished in [82] ms
+24-Feb-2022 20:51:20.423 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples]
+24-Feb-2022 20:51:21.323 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples] has finished in [900] ms
+24-Feb-2022 20:51:21.324 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\helloworld]
+24-Feb-2022 20:51:21.371 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\helloworld] has finished in [47] ms
+24-Feb-2022 20:51:21.372 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager]
+24-Feb-2022 20:51:21.436 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager] has finished in [64] ms
+24-Feb-2022 20:51:21.437 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1_1]
+24-Feb-2022 20:51:21.482 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1_1] has finished in [44] ms
+24-Feb-2022 20:51:21.482 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager]
+24-Feb-2022 20:51:21.528 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager] has finished in [46] ms
+24-Feb-2022 20:51:21.529 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT]
+24-Feb-2022 20:51:21.574 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT] has finished in [44] ms
+24-Feb-2022 20:51:21.574 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite]
+24-Feb-2022 20:51:21.610 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite] has finished in [36] ms
+24-Feb-2022 20:51:21.619 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2166] milliseconds
+24-Feb-2022 20:52:46.698 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Feb-2022 20:52:46.699 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:52:46.699 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Feb-2022 20:52:46.735 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:52:46.737 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:52:53.112 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+24-Feb-2022 20:52:53.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+24-Feb-2022 20:52:53.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+24-Feb-2022 20:52:53.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Feb-2022 20:52:53.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Feb-2022 20:52:53.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Feb-2022 20:52:53.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+24-Feb-2022 20:52:53.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+24-Feb-2022 20:52:53.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Feb-2022 20:52:53.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+24-Feb-2022 20:52:53.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16
+24-Feb-2022 20:52:53.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/conf/logging.properties
+24-Feb-2022 20:52:53.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Feb-2022 20:52:53.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Feb-2022 20:52:53.122 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Feb-2022 20:52:53.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+24-Feb-2022 20:52:53.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-Feb-2022 20:52:53.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+24-Feb-2022 20:52:53.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16
+24-Feb-2022 20:52:53.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/apache-tomcat-10.0.16/temp
+24-Feb-2022 20:52:53.131 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+24-Feb-2022 20:52:53.756 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:52:53.789 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [977] milliseconds
+24-Feb-2022 20:52:53.821 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Feb-2022 20:52:53.821 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+24-Feb-2022 20:52:53.847 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1-1.0-SNAPSHOT.war]
+24-Feb-2022 20:52:54.480 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [308] milliseconds.
+24-Feb-2022 20:52:54.497 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1-1.0-SNAPSHOT.war] has finished in [650] ms
+24-Feb-2022 20:52:54.497 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs]
+24-Feb-2022 20:52:54.521 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\docs] has finished in [24] ms
+24-Feb-2022 20:52:54.522 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples]
+24-Feb-2022 20:52:54.958 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\examples] has finished in [436] ms
+24-Feb-2022 20:52:54.958 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\helloworld]
+24-Feb-2022 20:52:54.989 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\helloworld] has finished in [30] ms
+24-Feb-2022 20:52:54.989 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager]
+24-Feb-2022 20:52:55.029 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\host-manager] has finished in [40] ms
+24-Feb-2022 20:52:55.030 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1_1]
+24-Feb-2022 20:52:55.062 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\lab_1_1] has finished in [31] ms
+24-Feb-2022 20:52:55.062 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager]
+24-Feb-2022 20:52:55.096 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\manager] has finished in [34] ms
+24-Feb-2022 20:52:55.096 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT]
+24-Feb-2022 20:52:55.121 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\ROOT] has finished in [25] ms
+24-Feb-2022 20:52:55.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite]
+24-Feb-2022 20:52:55.143 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\apache-tomcat-10.0.16\webapps\staticsite] has finished in [21] ms
+24-Feb-2022 20:52:55.147 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:52:55.165 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1374] milliseconds
+24-Feb-2022 20:54:29.361 WARNING [http-nio-8080-exec-3] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user [admin]
+24-Feb-2022 20:55:04.477 WARNING [http-nio-8080-exec-8] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user [admin]
+24-Feb-2022 20:55:50.630 WARNING [http-nio-8080-exec-1] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user [admin]
+24-Feb-2022 20:55:51.934 WARNING [http-nio-8080-exec-2] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user [admin]
+24-Feb-2022 20:55:53.133 WARNING [http-nio-8080-exec-3] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user [admin]
+24-Feb-2022 20:55:56.342 WARNING [http-nio-8080-exec-4] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts An attempt was made to authenticate the locked user [admin]
+24-Feb-2022 20:57:50.493 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Feb-2022 20:57:50.494 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:57:50.716 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Feb-2022 20:57:50.765 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Feb-2022 20:57:50.770 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Feb-2022 18:24:26.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+25-Feb-2022 18:24:26.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+25-Feb-2022 18:24:26.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+25-Feb-2022 18:24:26.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+25-Feb-2022 18:24:26.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+25-Feb-2022 18:24:26.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Feb-2022 18:24:26.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+25-Feb-2022 18:24:26.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+25-Feb-2022 18:24:26.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Feb-2022 18:24:26.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16
+25-Feb-2022 18:24:26.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16
+25-Feb-2022 18:24:26.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/conf/logging.properties
+25-Feb-2022 18:24:26.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Feb-2022 18:24:26.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Feb-2022 18:24:26.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Feb-2022 18:24:26.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+25-Feb-2022 18:24:26.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-Feb-2022 18:24:26.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16
+25-Feb-2022 18:24:26.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16
+25-Feb-2022 18:24:26.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/temp
+25-Feb-2022 18:24:26.091 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Users\moham\AppData\Local\Programs\mongosh;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+25-Feb-2022 18:24:26.655 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Feb-2022 18:24:26.697 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [974] milliseconds
+25-Feb-2022 18:24:26.785 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Feb-2022 18:24:26.785 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+25-Feb-2022 18:24:26.877 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\lab_1-1.0-SNAPSHOT.war]
+25-Feb-2022 18:24:27.598 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [295] milliseconds.
+25-Feb-2022 18:24:27.632 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\lab_1-1.0-SNAPSHOT.war] has finished in [755] ms
+25-Feb-2022 18:24:27.633 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs]
+25-Feb-2022 18:24:27.669 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs] has finished in [36] ms
+25-Feb-2022 18:24:27.670 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples]
+25-Feb-2022 18:24:28.352 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples] has finished in [683] ms
+25-Feb-2022 18:24:28.353 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld]
+25-Feb-2022 18:24:28.413 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld] has finished in [60] ms
+25-Feb-2022 18:24:28.413 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager]
+25-Feb-2022 18:24:28.486 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager] has finished in [73] ms
+25-Feb-2022 18:24:28.486 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\lab_1_1]
+25-Feb-2022 18:24:28.514 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\lab_1_1] has finished in [28] ms
+25-Feb-2022 18:24:28.514 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager]
+25-Feb-2022 18:24:28.554 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager] has finished in [40] ms
+25-Feb-2022 18:24:28.554 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT]
+25-Feb-2022 18:24:28.581 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT] has finished in [27] ms
+25-Feb-2022 18:24:28.581 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite]
+25-Feb-2022 18:24:28.602 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite] has finished in [21] ms
+25-Feb-2022 18:24:28.607 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+25-Feb-2022 18:24:28.635 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1938] milliseconds
+25-Feb-2022 18:27:08.899 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/E:/torrent/apache-tomcat-10.0.16/conf/tomcat-users.xml]
+25-Feb-2022 18:30:49.916 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/lab_1-1.0-SNAPSHOT]
+25-Feb-2022 18:33:10.141 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/helloworld]
+25-Feb-2022 18:33:10.199 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war]
+25-Feb-2022 18:33:10.326 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war] has finished in [127] ms
+25-Feb-2022 18:34:30.450 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war]
+25-Feb-2022 18:34:30.600 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war] has finished in [150] ms
+25-Feb-2022 18:35:30.677 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war]
+25-Feb-2022 18:35:30.745 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war] has finished in [69] ms
+25-Feb-2022 18:36:01.310 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/lab_1_1]
+25-Feb-2022 18:43:09.489 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+25-Feb-2022 18:43:09.490 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Feb-2022 18:43:09.869 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Feb-2022 18:43:09.918 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Feb-2022 18:43:09.922 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+27-Feb-2022 19:31:42.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+27-Feb-2022 19:31:42.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+27-Feb-2022 19:31:42.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+27-Feb-2022 19:31:42.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+27-Feb-2022 19:31:42.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+27-Feb-2022 19:31:42.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Feb-2022 19:31:42.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+27-Feb-2022 19:31:42.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+27-Feb-2022 19:31:42.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+27-Feb-2022 19:31:42.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16
+27-Feb-2022 19:31:42.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16
+27-Feb-2022 19:31:42.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/conf/logging.properties
+27-Feb-2022 19:31:42.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Feb-2022 19:31:42.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Feb-2022 19:31:42.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Feb-2022 19:31:42.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+27-Feb-2022 19:31:42.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+27-Feb-2022 19:31:42.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16
+27-Feb-2022 19:31:42.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16
+27-Feb-2022 19:31:42.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/temp
+27-Feb-2022 19:31:42.898 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Users\moham\AppData\Local\Programs\mongosh;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+27-Feb-2022 19:31:43.814 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Feb-2022 19:31:43.914 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1475] milliseconds
+27-Feb-2022 19:31:43.980 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Feb-2022 19:31:43.980 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+27-Feb-2022 19:31:44.081 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war]
+27-Feb-2022 19:31:44.967 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [302] milliseconds.
+27-Feb-2022 19:31:44.995 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war] has finished in [915] ms
+27-Feb-2022 19:31:45.068 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war]
+27-Feb-2022 19:31:45.177 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war] has finished in [109] ms
+27-Feb-2022 19:31:45.239 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war]
+27-Feb-2022 19:31:45.242 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry] was found with a last modified time that did not match the associated WAR. It will be deleted.
+27-Feb-2022 19:31:45.310 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war] has finished in [71] ms
+27-Feb-2022 19:31:45.319 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\mime_type.war]
+27-Feb-2022 19:31:45.745 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Feb-2022 19:31:45.748 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\mime_type.war] has finished in [429] ms
+27-Feb-2022 19:31:45.748 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs]
+27-Feb-2022 19:31:45.823 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs] has finished in [73] ms
+27-Feb-2022 19:31:45.823 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples]
+27-Feb-2022 19:31:46.714 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples] has finished in [891] ms
+27-Feb-2022 19:31:46.714 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager]
+27-Feb-2022 19:31:46.764 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager] has finished in [50] ms
+27-Feb-2022 19:31:46.764 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager]
+27-Feb-2022 19:31:46.798 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager] has finished in [34] ms
+27-Feb-2022 19:31:46.799 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT]
+27-Feb-2022 19:31:46.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT] has finished in [37] ms
+27-Feb-2022 19:31:46.837 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite]
+27-Feb-2022 19:31:46.862 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite] has finished in [24] ms
+27-Feb-2022 19:31:46.865 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Feb-2022 19:31:46.896 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2981] milliseconds
+org.postgresql.jdbc.PgResultSet@31eeb113
+org.postgresql.jdbc.PgResultSet@3135de32
+iam in
+iam in
+org.postgresql.jdbc.PgResultSet@47ba6e6f
+iam in
+iam in
+org.postgresql.jdbc.PgResultSet@632e2151
+iam in
+iam in
+org.postgresql.jdbc.PgResultSet@16936bd6
+iam in
+iam in
+org.postgresql.jdbc.PgResultSet@27ff520
+iam in
+iam in
+iam in
+27-Feb-2022 19:33:38.543 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+27-Feb-2022 19:33:38.544 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Feb-2022 19:33:38.781 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Feb-2022 19:33:38.832 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [mime_type] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+27-Feb-2022 19:33:38.843 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Feb-2022 19:33:38.851 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+28-Feb-2022 12:57:47.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+28-Feb-2022 12:57:47.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+28-Feb-2022 12:57:47.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+28-Feb-2022 12:57:47.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+28-Feb-2022 12:57:47.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+28-Feb-2022 12:57:47.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Feb-2022 12:57:47.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+28-Feb-2022 12:57:47.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+28-Feb-2022 12:57:47.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Feb-2022 12:57:47.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16
+28-Feb-2022 12:57:47.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16
+28-Feb-2022 12:57:47.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/conf/logging.properties
+28-Feb-2022 12:57:47.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Feb-2022 12:57:47.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Feb-2022 12:57:47.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Feb-2022 12:57:47.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+28-Feb-2022 12:57:47.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+28-Feb-2022 12:57:47.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16
+28-Feb-2022 12:57:47.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16
+28-Feb-2022 12:57:47.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/temp
+28-Feb-2022 12:57:47.636 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\Program Files (x86)\VMware\VMware Player\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Users\moham\AppData\Local\Programs\mongosh;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+28-Feb-2022 12:57:48.481 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Feb-2022 12:57:48.539 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1556] milliseconds
+28-Feb-2022 12:57:48.664 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Feb-2022 12:57:48.664 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+28-Feb-2022 12:57:48.833 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war]
+28-Feb-2022 12:57:50.862 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [988] milliseconds.
+28-Feb-2022 12:57:50.907 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war] has finished in [2,073] ms
+28-Feb-2022 12:57:50.997 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war]
+28-Feb-2022 12:57:51.171 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war] has finished in [175] ms
+28-Feb-2022 12:57:51.276 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war]
+28-Feb-2022 12:57:51.459 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war] has finished in [182] ms
+28-Feb-2022 12:57:51.531 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\mime_type.war]
+28-Feb-2022 12:57:52.421 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Feb-2022 12:57:52.430 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\mime_type.war] has finished in [899] ms
+28-Feb-2022 12:57:52.446 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs]
+28-Feb-2022 12:57:52.542 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs] has finished in [96] ms
+28-Feb-2022 12:57:52.543 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples]
+28-Feb-2022 12:57:54.107 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples] has finished in [1,565] ms
+28-Feb-2022 12:57:54.112 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager]
+28-Feb-2022 12:57:54.344 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager] has finished in [233] ms
+28-Feb-2022 12:57:54.345 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager]
+28-Feb-2022 12:57:54.465 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager] has finished in [120] ms
+28-Feb-2022 12:57:54.465 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT]
+28-Feb-2022 12:57:54.504 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT] has finished in [39] ms
+28-Feb-2022 12:57:54.504 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite]
+28-Feb-2022 12:57:54.527 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite] has finished in [23] ms
+28-Feb-2022 12:57:54.532 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Feb-2022 12:57:54.564 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [6025] milliseconds
+mohammed
+org.postgresql.jdbc.PgResultSet@29800739
+iam in
+iam in
+iam in
+iam in
+org.postgresql.jdbc.PgResultSet@367f43e4
+iam in
+28-Feb-2022 13:16:00.811 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+28-Feb-2022 13:16:00.811 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+28-Feb-2022 13:16:01.336 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+28-Feb-2022 13:16:01.395 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [mime_type] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+28-Feb-2022 13:16:01.401 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+28-Feb-2022 13:16:01.415 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+01-Mar-2022 16:42:51.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+01-Mar-2022 16:42:51.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+01-Mar-2022 16:42:51.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+01-Mar-2022 16:42:51.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+01-Mar-2022 16:42:51.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+01-Mar-2022 16:42:51.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Mar-2022 16:42:51.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+01-Mar-2022 16:42:51.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+01-Mar-2022 16:42:51.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Mar-2022 16:42:51.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16
+01-Mar-2022 16:42:51.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16
+01-Mar-2022 16:42:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/conf/logging.properties
+01-Mar-2022 16:42:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Mar-2022 16:42:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+01-Mar-2022 16:42:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+01-Mar-2022 16:42:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+01-Mar-2022 16:42:51.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+01-Mar-2022 16:42:51.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16
+01-Mar-2022 16:42:51.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16
+01-Mar-2022 16:42:51.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/temp
+01-Mar-2022 16:42:51.151 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\Program Files (x86)\VMware\VMware Player\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Users\moham\AppData\Local\Programs\mongosh;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+01-Mar-2022 16:42:51.881 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+01-Mar-2022 16:42:51.923 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1154] milliseconds
+01-Mar-2022 16:42:51.983 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+01-Mar-2022 16:42:51.983 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+01-Mar-2022 16:42:52.103 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war]
+01-Mar-2022 16:42:52.984 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [425] milliseconds.
+01-Mar-2022 16:42:53.023 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war] has finished in [920] ms
+01-Mar-2022 16:42:53.098 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war]
+01-Mar-2022 16:42:53.253 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war] has finished in [155] ms
+01-Mar-2022 16:42:53.310 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war]
+01-Mar-2022 16:42:53.404 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war] has finished in [94] ms
+01-Mar-2022 16:42:53.464 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\mime_type.war]
+01-Mar-2022 16:42:53.983 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Mar-2022 16:42:53.985 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\mime_type.war] has finished in [521] ms
+01-Mar-2022 16:42:54.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs]
+01-Mar-2022 16:42:54.065 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs] has finished in [62] ms
+01-Mar-2022 16:42:54.066 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples]
+01-Mar-2022 16:42:54.784 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples] has finished in [718] ms
+01-Mar-2022 16:42:54.784 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager]
+01-Mar-2022 16:42:54.887 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager] has finished in [103] ms
+01-Mar-2022 16:42:54.887 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager]
+01-Mar-2022 16:42:54.956 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager] has finished in [69] ms
+01-Mar-2022 16:42:54.957 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT]
+01-Mar-2022 16:42:55.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT] has finished in [50] ms
+01-Mar-2022 16:42:55.013 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite]
+01-Mar-2022 16:42:55.036 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite] has finished in [24] ms
+01-Mar-2022 16:42:55.042 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+01-Mar-2022 16:42:55.094 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3170] milliseconds
+01-Mar-2022 16:44:09.563 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+01-Mar-2022 16:44:09.563 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+01-Mar-2022 16:44:09.809 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+01-Mar-2022 16:44:09.856 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+01-Mar-2022 16:44:09.868 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+03-Apr-2022 22:17:25.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+03-Apr-2022 22:17:25.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+03-Apr-2022 22:17:25.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+03-Apr-2022 22:17:25.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+03-Apr-2022 22:17:25.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Apr-2022 22:17:25.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Apr-2022 22:17:25.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+03-Apr-2022 22:17:25.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+03-Apr-2022 22:17:25.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Apr-2022 22:17:25.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16
+03-Apr-2022 22:17:25.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16
+03-Apr-2022 22:17:25.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/conf/logging.properties
+03-Apr-2022 22:17:25.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Apr-2022 22:17:25.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+03-Apr-2022 22:17:25.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+03-Apr-2022 22:17:25.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+03-Apr-2022 22:17:25.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+03-Apr-2022 22:17:25.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16
+03-Apr-2022 22:17:25.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16
+03-Apr-2022 22:17:25.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/temp
+03-Apr-2022 22:17:25.785 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\Program Files\Python38\Scripts;C:\Program Files\Python38;C:\Program Files (x86)\VMware\VMware Player\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\moham\scoop\shims;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Users\moham\AppData\Local\Programs\mongosh;C:\Program Files\JetBrains\PyCharm 2021.3.2\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+03-Apr-2022 22:17:26.518 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+03-Apr-2022 22:17:26.584 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1208] milliseconds
+03-Apr-2022 22:17:26.665 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+03-Apr-2022 22:17:26.666 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+03-Apr-2022 22:17:26.698 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\E_Shopper.war]
+03-Apr-2022 22:17:29.720 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Apr-2022 22:17:34.097 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\E_Shopper.war] has finished in [7,398] ms
+03-Apr-2022 22:17:34.141 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war]
+03-Apr-2022 22:17:34.242 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war] has finished in [102] ms
+03-Apr-2022 22:17:34.413 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war]
+03-Apr-2022 22:17:34.621 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war] has finished in [207] ms
+03-Apr-2022 22:17:34.685 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war]
+03-Apr-2022 22:17:34.893 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war] has finished in [208] ms
+03-Apr-2022 22:17:34.948 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\mime_type.war]
+03-Apr-2022 22:17:35.523 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Apr-2022 22:17:35.528 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\mime_type.war] has finished in [581] ms
+03-Apr-2022 22:17:35.529 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs]
+03-Apr-2022 22:17:35.575 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs] has finished in [46] ms
+03-Apr-2022 22:17:35.576 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples]
+03-Apr-2022 22:17:36.613 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples] has finished in [1,037] ms
+03-Apr-2022 22:17:36.614 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager]
+03-Apr-2022 22:17:36.733 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager] has finished in [118] ms
+03-Apr-2022 22:17:36.733 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager]
+03-Apr-2022 22:17:36.798 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager] has finished in [59] ms
+03-Apr-2022 22:17:36.799 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT]
+03-Apr-2022 22:17:36.852 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT] has finished in [52] ms
+03-Apr-2022 22:17:36.852 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite]
+03-Apr-2022 22:17:36.902 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite] has finished in [50] ms
+03-Apr-2022 22:17:36.912 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+03-Apr-2022 22:17:36.965 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [10381] milliseconds
+in get product
+in get product
+in get product
+mode is signin
+mohammed668800.ma@gmail.com 1502654
+entered pass 1502654
+user id 6
+yes 
+in validation 6
+in get product
+in get product
+in get product
+in get product
+in get product
+in get product
+in cart 6
+in get cart
+in get product
+03-Apr-2022 22:18:10.059 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+03-Apr-2022 22:18:10.059 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+03-Apr-2022 22:18:10.501 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+03-Apr-2022 22:18:10.534 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [E_Shopper] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+03-Apr-2022 22:18:10.584 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+03-Apr-2022 22:18:10.591 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Apr-2022 21:06:01.897 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.16
+04-Apr-2022 21:06:01.936 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 15 2022 13:19:56 UTC
+04-Apr-2022 21:06:01.937 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.16.0
+04-Apr-2022 21:06:01.937 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+04-Apr-2022 21:06:01.937 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+04-Apr-2022 21:06:01.937 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Apr-2022 21:06:01.937 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_141
+04-Apr-2022 21:06:01.937 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+04-Apr-2022 21:06:01.937 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Apr-2022 21:06:01.937 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\torrent\apache-tomcat-10.0.16
+04-Apr-2022 21:06:01.938 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\torrent\apache-tomcat-10.0.16
+04-Apr-2022 21:06:01.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:/torrent/apache-tomcat-10.0.16/conf/logging.properties
+04-Apr-2022 21:06:01.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Apr-2022 21:06:01.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Apr-2022 21:06:01.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Apr-2022 21:06:01.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Apr-2022 21:06:01.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Apr-2022 21:06:01.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:/torrent/apache-tomcat-10.0.16
+04-Apr-2022 21:06:01.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:/torrent/apache-tomcat-10.0.16
+04-Apr-2022 21:06:01.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:/torrent/apache-tomcat-10.0.16/temp
+04-Apr-2022 21:06:01.973 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\moham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\moham\bin;C:\Program Files\Python38\Scripts;C:\Program Files\Python38;C:\Program Files (x86)\VMware\VMware Player\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\moham\scoop\shims;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\moham\AppData\Local\Microsoft\WindowsApps;C:\Users\moham\AppData\Roaming\npm;C:\Users\moham\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moham\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Users\moham\AppData\Local\Programs\mongosh;C:\Program Files\JetBrains\PyCharm 2021.3.2\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+04-Apr-2022 21:06:02.834 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Apr-2022 21:06:02.890 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1438] milliseconds
+04-Apr-2022 21:06:02.975 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Apr-2022 21:06:02.975 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.16]
+04-Apr-2022 21:06:03.022 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\E_Shopper.war]
+04-Apr-2022 21:06:03.072 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [E:\torrent\apache-tomcat-10.0.16\webapps\E_Shopper] was found with a last modified time that did not match the associated WAR. It will be deleted.
+04-Apr-2022 21:06:07.070 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Apr-2022 21:06:08.011 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [897] milliseconds.
+04-Apr-2022 21:06:08.065 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\E_Shopper.war] has finished in [5,042] ms
+04-Apr-2022 21:06:08.229 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war]
+04-Apr-2022 21:06:08.304 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\hellouser.war] has finished in [75] ms
+04-Apr-2022 21:06:08.381 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war]
+04-Apr-2022 21:06:08.502 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\helloworld.war] has finished in [121] ms
+04-Apr-2022 21:06:08.572 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war]
+04-Apr-2022 21:06:08.665 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\Inquiry.war] has finished in [93] ms
+04-Apr-2022 21:06:08.694 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\mime_type.war]
+04-Apr-2022 21:06:09.010 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Apr-2022 21:06:09.015 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\torrent\apache-tomcat-10.0.16\webapps\mime_type.war] has finished in [321] ms
+04-Apr-2022 21:06:09.015 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs]
+04-Apr-2022 21:06:09.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\docs] has finished in [35] ms
+04-Apr-2022 21:06:09.051 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples]
+04-Apr-2022 21:06:10.179 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\examples] has finished in [1,125] ms
+04-Apr-2022 21:06:10.181 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager]
+04-Apr-2022 21:06:10.267 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\host-manager] has finished in [86] ms
+04-Apr-2022 21:06:10.267 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager]
+04-Apr-2022 21:06:10.451 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\manager] has finished in [184] ms
+04-Apr-2022 21:06:10.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT]
+04-Apr-2022 21:06:10.582 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\ROOT] has finished in [129] ms
+04-Apr-2022 21:06:10.583 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite]
+04-Apr-2022 21:06:10.618 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\torrent\apache-tomcat-10.0.16\webapps\staticsite] has finished in [35] ms
+04-Apr-2022 21:06:10.624 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Apr-2022 21:06:10.674 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [7783] milliseconds
+04-Apr-2022 21:06:19.271 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Apr-2022 21:06:19.272 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Apr-2022 21:06:19.747 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Apr-2022 21:06:19.803 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Apr-2022 21:06:19.848 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

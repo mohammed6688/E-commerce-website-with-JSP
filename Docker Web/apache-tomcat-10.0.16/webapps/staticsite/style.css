@@ -1,0 +1,39 @@
+.center {
+  border: 8px solid RED;
+  text-align: center;
+  margin: 20%;
+}
+
+.master{
+  border: 1px solid RED;
+  text-align: center;
+  margin: 1px;
+  width: 100%;
+}
+
+.element{
+  width: 100%;
+}
+
+.gifr{
+  float: right;
+  height: 50px;
+}
+.gif{
+
+  width: 50px;
+  height: 50px;
+}
+.sgif{
+
+  width: 50px;
+  height: 50px;
+}
+.gifl{
+  float: left;
+  height: 50px;
+}
+.center2{
+  margin-top: 20%;
+  text-align: center;
+}
